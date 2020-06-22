@@ -1,0 +1,35 @@
+__Key questions__
+
+- What are the 3 distributed DBMS architectures? How do they differ?
+- Give an example of each of the architectures.
+- What are the 3 goals for a shared data system?
+- State the CAP theorem.
+- What is a general rule of thumb for latency across networks?
+---
+- What are the two types of data partitioning? Describe the ways a dataset can be partitioned.
+- What is data sharding?
+- Define inter-query vs. intra-query parallelism.
+- What is the difference in query optimisation considerations between distributed and local optimisation plans?
+- What are the two evaluation strategies for query evaluation? How do they differ and what is the advantage of each?
+- Describe the different types of joins for distributed data processing. When would you use which?
+---
+- What some different models for data replication?
+- What is the key principle for data replication?
+- What are the two main different types of replication concerning storage requirements for replication?
+- What are the levels of consistency we can provide in a DBMS? 
+- How are writes propagated? What about propagating to replicas?
+- What is the different between primary copy and multi-master replication?
+- What is the difference between lazy (asynchronous) and eager (synchronous) replication?
+- What the advantages and disadvantages of synchronous replication?
+- Describe MongoDB's replication model.
+---
+- Describe the fundamental components of a distributed file system (DFS)
+- What are some requirements for big data analysis?
+- What are the key ideas behind HDFS?
+- Describe the HDFS architecture.
+- Describe how read/write are implemented in HDFS.
+- What is the write operation's data flow in HDFS?
+- How is replication implemented in HDFS?
+- What are the 3 reasons for data replication in HDFS and why are they important?
+- What are some common CLI commands for HDFS?
+- How can the `DistributedCache` in Apache Hadoop be used for distributed join processing?

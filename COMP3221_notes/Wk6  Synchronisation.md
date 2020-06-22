@@ -1,0 +1,36 @@
+__Key questions__
+
+- How is time measured?
+- What is the difference between atomic seconds and solar seconds?
+- Why are leap seconds introduced?
+- What is UTC?
+- What are the most accurate time broadcasters we have available?
+- What is the difference between hardware and software clocks?
+- What is the relation between clock time and UTC?
+---
+- Explain the network time protocol, i.e. Cristians' algorithm
+- Explain Berkley's algorithm.
+- What are the pros and cons of physical time?
+---
+- Define logical time. Why is using logical time a reasonable choice?
+- Explain "a happens before b".
+- Explain Lamport's logical clocks and Lamport's logical clocks algorithm.
+- Explain vector clocks and the vector clock algorithm.
+- What is the difference between the two algorithms
+---
+- Define "ordering of messages".
+- Define "reliability". What are the 3 features?
+- Describe FIFO multicast.
+- Describe totally ordered multicast.
+- Describe causal ordered multicast.
+---
+- Define mututal exclusion and explain why this is important.
+- Describe the centralised algorithm for mutual exclusion.
+- Describe the decentralised algorithm for mutual exclusion.
+- Describe the Ricart and Agrawala algorithm.
+- Describe the token ring algorithm.
+- Summarise the 4 algorithms
+---
+- Explain leader election and why its important.
+- Explain the bully algorithm.
+- Explain "election in a ring" algorithm.

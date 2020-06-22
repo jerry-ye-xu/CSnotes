@@ -1,0 +1,21 @@
+__Key questions__
+
+- What is the difference between trusted and trustworthy systems?
+- Briefly compare blockchains to conventional databases.
+- What are some complementary components to blockchains?
+- What are some use cases for blockchain?
+---
+- Describe the use case for supply chains.
+- Describe the open data registeries use case.
+- Describe the use case for remittance payments. 
+---
+- What is the biggest issue with adopting Blockchains?
+- What are some myths of Blockchains?
+- What are some research directions of Blockchain?
+---
+- Describe "man-in-the-middle" attacks
+- Describe the "double-spending" attack.
+- What are mining pools?
+- Define a consortium Blockchain.
+- How are Ethereum block creation difficulty adjusted? How do we take advantage of this to attack an eumulated consortium Ethereum blockchain?
+- How does this work for private blockchain?

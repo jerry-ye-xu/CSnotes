@@ -1,0 +1,25 @@
+__Key questions__
+
+- Describe Spark's RDD dataset.
+- Describe some of the RDD API's operations.
+- What type of join does Spark's RDD API use?
+---
+- Draw a diagram of Flink's stack.
+- What is the unit of data in Apache Flink called and what is its structure?
+- mWhat is the difference between value types and the primitive types in Flink?
+- What is a collection of units of data in Apache Flink called?
+- What is the programming model for Flink?
+- What are some of the data transformations in Flink?
+- Describe the map/flatmap operator.
+- Describe the reduce operator. Explain how you might optimise the reduce procedure.
+- Describe the iterate operator.
+- Describe the cross operator.
+- Describe the cogroup operator.
+- Describe the join operator.
+- What are the inter-node joins in Flink?
+- What about the within-node (local) joins in Flink?
+- Describe the Flink optimiser.
+- Describe how Flink manages memory.
+- What is a data sink?
+- Describe Flink's DataSet API and its features.
+- Describe Flink's Table API and its features.

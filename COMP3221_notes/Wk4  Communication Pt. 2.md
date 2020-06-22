@@ -1,0 +1,22 @@
+__Key questions__
+
+- What does message loss occur?
+- What is TCP?
+- What is the difference between flow and congestion control?
+- What does TCP actually put inside its segment?
+- How is the timeout value used in TCP events?
+- Illustrate some re-transmission scenarios.
+- How does "fast re-transmit" work?
+- Describe TCP flow control.
+- Describe TCP congestion control.
+- What has to happen before 2 access points on send each other data with TCP?
+- How do you close the connection?
+- Explain HTTP at a high level.
+---
+- Draw the timeline diagrams for synchronous and asynchronous calls.
+- Describe the sequence of steps for a RPC.
+- Describe the "distributed computing environment"?
+---
+- What is an overlay network?
+- How do we measure quality of appication-level multicast tree.
+- How does gossip based data dissemination work?

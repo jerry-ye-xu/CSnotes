@@ -1,0 +1,29 @@
+__Key questions__
+
+- Why is the idea of consistency important w.r.t data storage and replication?
+- When does a "conflict" occur?
+- Define a consistency model and specify the two main types of consistency models.
+- Define (memory) coherence. What is the difference between coherence and consistency?
+- What are some examples of types of consistency models for both data-centric and client-centric approaches?
+- Define "program order".
+- Define execution and serial execution.
+- Define equivalent execution.
+---
+- Briefly describe the idea of sequential consistency. Draw a diagram with a example that violates sequential consistency.
+- Draw a diagram that is coherent but not consistent.
+- Define causal consistency and explain how it is different from sequential consistency.
+- Define FIFO consistency and explain how it is different from causal consistency.
+- Describe eventual consistency. What is the assumption that eventual consistency makes?
+---
+- What is the idea of replication, and why does totally-ordered broadcast not scale well?
+- Describe the "primary backup" and "local write primary backup". What is the advantage of the "local write" version?
+- Describe quorum-based read-write replication. In particular, describe the constraints that must be followed and explain their purpose.
+---
+- What are multi-access operations and why do the previously mentioned consistency models fail?
+- What does ACID stand for and why is it important?
+- Define serialisability.
+- Define sequential execution.
+- Give an example of serialisable and non-serialisable executions.
+- What is "real time precedence"?
+- Define linearisability. How it is different to serialisability?
+- Give an example of both a linearisable and non-linearisable sequence of executions. 
