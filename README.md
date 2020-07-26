@@ -12,6 +12,6 @@ This collection of notes includes:
 
 You may want to clone the repository into your local computer and import it into Quiver/BoostNotes to read and see the pictures.
 
-If possible, you can render the latex (math) and diagrams in the notes in a markdown render program.
+If possible, you can render the latex (math) and diagrams in the notes in a markdown rendering program, e.g. [MacDown](https://macdown.uranusjr.com/)
 
 Please don't hesitate to reach out to me via email at jerryyexu@gmail.com if you have any suggestions or if you spot something.
