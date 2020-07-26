@@ -71,6 +71,6 @@ An algorithm is said to be differentially private if an observer seeing its outp
 
 For FL, differential privacy plays a role by clipping weight updates to limit the contribution of an individual node and the server will add noise when combining updates.
 
-![Screen Shot 2020-06-20 at 1.35.29 pm.png](resources/6F7E9D6EB3C0417B9C4CB30CF3437721.png =772x368)
+![Screen Shot 2020-06-20 at 1.35.29 pm.png](resources/6F7E9D6EB3C0417B9C4CB30CF3437721.png=772x368)
 
 ---
