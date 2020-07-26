@@ -62,7 +62,7 @@ c) **Projections and selections**
 
 A projection commutes with a selection that uses only attributes retained by the projection.
 
-![Screen Shot 2020-06-12 at 12.17.01 am.png](resources/47F68CBD0CD91E9DE4039FA2D6B4955B.png =671x313)
+![Screen Shot 2020-06-12 at 12.17.01 am.png](resources/47F68CBD0CD91E9DE4039FA2D6B4955B.png)
 
 d) **Join equivalence**
 

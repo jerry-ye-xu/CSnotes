@@ -24,7 +24,7 @@ __UTC__
 
 That is, if the discrepancy between atomic and solar time grows to larger than 800msec, then BIH (bureau for measuring time) introduces a leap second. This corrected time system is called UTC.
 
-![Screen Shot 2020-06-10 at 2.49.07 pm.png](resources/79A8EFDC38229DF30F274C04BB0DC1C2.png =825x205)
+![Screen Shot 2020-06-10 at 2.49.07 pm.png](resources/79A8EFDC38229DF30F274C04BB0DC1C2.png)
 
 ---
 
@@ -60,7 +60,7 @@ The UTC is the primary time standard which is used by use to regulate time and c
 
 **Explain the network time protocol, i.e. Cristians' algorithm**
 
-![Screen Shot 2020-06-10 at 3.24.08 pm.png](resources/BAAF3097DBFD071F23408894027CBCDD.png =447x224)
+![Screen Shot 2020-06-10 at 3.24.08 pm.png](resources/BAAF3097DBFD071F23408894027CBCDD.png)
 
 Assume that the clock rate increases monotonically, and both message transitions take roughly equal time, then we have
 
@@ -76,7 +76,7 @@ $$T_{3} + \frac{RTT}{2}$$
 
 The NTP algorithmis set up pair-wise between servers, like below.
 
-![Screen Shot 2020-06-10 at 3.31.09 pm.png](resources/22F3DBDB8C60C4945EA847005AD01545.png =969x767)
+![Screen Shot 2020-06-10 at 3.31.09 pm.png](resources/22F3DBDB8C60C4945EA847005AD01545.png)
 
 The algorithm is run 8 times and the pair with the minimum $RTT$ is used as the most precise offset. 
 
@@ -164,7 +164,7 @@ Every process $p_{0}$ maintains a local time vector counter $vc_{0} = \{c_{0}, c
 - $p_{k}$ updates the clock for $vc_{k}[j] = \max\{vc_{j}[j], vc_{k}[j]\}$
 - $p_{k}$ updates its local clock again $vc_{k}[k]+=1$ and executes the message/event received.
 
-![Screen Shot 2020-06-10 at 5.08.53 pm.png](resources/15481E38D95E3BCE890144E794F8D6D8.png =779x382)
+![Screen Shot 2020-06-10 at 5.08.53 pm.png](resources/15481E38D95E3BCE890144E794F8D6D8.png)
 
 So here we have some guarantees that for two events $a$ and $b$ we have
 
@@ -232,7 +232,7 @@ For the ACK, it still adjusts its clock but does not increment.
 
 See the example below.
 
-![Screen Shot 2020-06-18 at 8.41.04 pm.png](resources/B1FAA3CEB909FDD49FE431830CA768B0.png =714x280)
+![Screen Shot 2020-06-18 at 8.41.04 pm.png](resources/B1FAA3CEB909FDD49FE431830CA768B0.png)
 
 Here we have $B:6, A:7, C:7$. However, we deliver messages based on the order of both timestamp and process ID.
 
@@ -260,7 +260,7 @@ a) $ts(m)[i] = vc_{k}[i] + 1$ $\longleftarrow$ that is, $m$ is indeed the next m
 
 b) $ts(m)[l] \leq vc_{k}[l]$ $\;\;\forall l\neq i$ $\longleftarrow$ that is, all other causally preceding messages have been delivered. 
 
-![Screen Shot 2020-06-10 at 7.57.58 pm.png](resources/D123A450C52C48E8F90071A35E5ED7EB.png =668x302)
+![Screen Shot 2020-06-10 at 7.57.58 pm.png](resources/D123A450C52C48E8F90071A35E5ED7EB.png)
 
 ---
 
@@ -276,7 +276,7 @@ Hence we would like resources to have exclusive access when writing to it.
 
 **Describe the centralised algorithm for mutual exclusion.**
 
-![Screen Shot 2020-06-10 at 8.09.42 pm.png](resources/22393F91315B8BD85E427EF26FD8D9D6.png =783x238)
+![Screen Shot 2020-06-10 at 8.09.42 pm.png](resources/22393F91315B8BD85E427EF26FD8D9D6.png)
 
 The algorithm requires request, grant and release messages only.
 

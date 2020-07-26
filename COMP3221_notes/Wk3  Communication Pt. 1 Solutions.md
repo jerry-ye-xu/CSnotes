@@ -12,7 +12,7 @@ Connectionless does not require such a setup.
 
 From top to bottom we have:
 
-![Screen Shot 2020-06-14 at 2.55.28 pm.png](resources/B04D27CB22561456B77DCCD1B5A3BD66.png =584x389)
+![Screen Shot 2020-06-14 at 2.55.28 pm.png](resources/B04D27CB22561456B77DCCD1B5A3BD66.png)
 
 A fairly simplified overview of the what is being sent across the network.
 
@@ -78,9 +78,9 @@ The transmission medium could be electrical or radio etc.
 
 **Piece together how the frame looks at each layer.**
 
-![Screen Shot 2020-06-14 at 3.44.00 pm.png](resources/3CE1E45FFBA9F7885E80434F51E0A60D.png =575x325)
+![Screen Shot 2020-06-14 at 3.44.00 pm.png](resources/3CE1E45FFBA9F7885E80434F51E0A60D.png)
 
-![Screen Shot 2020-06-14 at 3.44.08 pm.png](resources/E9AB006B1DF5CC3708928EE1FE2F52A6.png =518x260)
+![Screen Shot 2020-06-14 at 3.44.08 pm.png](resources/E9AB006B1DF5CC3708928EE1FE2F52A6.png)
 
 ---
 
@@ -140,7 +140,7 @@ If a node detects a change or receives an update from its neighbour, it will rec
 
 Each node stores information on the table of values for all routers as propagated to them by their neighbours, and do not see the network topology (this is a decentralised algorithm after all).
 
-![Screen Shot 2020-06-14 at 4.35.10 pm.png](resources/9BA8A5392E59F70ADBF645EC2B791C2A.png =822x616)
+![Screen Shot 2020-06-14 at 4.35.10 pm.png](resources/9BA8A5392E59F70ADBF645EC2B791C2A.png)
 
 Note that here we use an integer value for the cost of travelling between nodes. The RIP algorithm (as you will see below) determines distance based on number of hops i.e. how many routers it has to pass.
 
@@ -403,7 +403,7 @@ Sockets are identified by an IP address concatenated with a port number.
 
 In general they use the client-server model.
 
-![Screen Shot 2020-06-18 at 8.11.07 pm.png](resources/8329AFA91449CC47BF710B117C29345F.png =805x211)
+![Screen Shot 2020-06-18 at 8.11.07 pm.png](resources/8329AFA91449CC47BF710B117C29345F.png)
 
 ---
 
@@ -431,7 +431,7 @@ Software and hardware infrastructure supporting send and receive of messages bet
 
 The middleware layer allows software components that have been developed independently and run on different networking platforms to interact with one another. The components will use the application interface of MOM to communicate. It also supports asynchronous calls between the client and server applications.
 
-![Screen Shot 2020-06-18 at 8.25.13 pm.png](resources/C352E5347E982B9FEBA3F2B9E6C5570A.png =458x346)
+![Screen Shot 2020-06-18 at 8.25.13 pm.png](resources/C352E5347E982B9FEBA3F2B9E6C5570A.png)
 
 In principle, each application maintains a local queue that receives incoming messages. The application will process the messages in its own time. Hence non-blocking.
 
@@ -454,12 +454,12 @@ d) **Asynchronous**
 
 Non-blocking. Sender does not wait for reply from receiver and continues to execute its program.
 
-![Screen Shot 2020-06-18 at 8.32.10 pm.png](resources/B1718F4977404E10EA407D691E86A577.png =570x235)
+![Screen Shot 2020-06-18 at 8.32.10 pm.png](resources/B1718F4977404E10EA407D691E86A577.png)
 
 a) persistent asynchronous
 b) persistent synchronous
 
-![Screen Shot 2020-06-18 at 8.32.03 pm.png](resources/72CE10208834DCF7357ED077C26F71A4.png =570x235)
+![Screen Shot 2020-06-18 at 8.32.03 pm.png](resources/72CE10208834DCF7357ED077C26F71A4.png)
 
 c) transient asynchronous
 d) transient synchronous (receipt-based)

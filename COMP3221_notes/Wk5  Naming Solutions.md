@@ -91,7 +91,7 @@ b) __Recursive:__ The request of the root node is passed to the next node that i
 ---
 - Describe the chord DHT.
 
-![Screen Shot 2020-06-10 at 11.22.48 am.png](resources/AA2C776D898CF280804A42E1EB37D2D0.png =652x668)
+![Screen Shot 2020-06-10 at 11.22.48 am.png](resources/AA2C776D898CF280804A42E1EB37D2D0.png)
 
 Each node in the chord has a randomly chosen id $k$. Each file that is stored has a key that is determined by the hash function. The key is encoded in $m$ bits, usually 128 or 160 depending on the has function used.
 
@@ -145,7 +145,7 @@ The information maintained at each node is the size of the finger table, $O(\log
 
 **Describe the CAN DHT.**
 
-![content-addressable-network.jpg](resources/B4D7D71D30431AA8A537FB16760D0611.jpg =638x479)
+![content-addressable-network.jpg](resources/B4D7D71D30431AA8A537FB16760D0611.jpg)
 
 CAN := content addressable network.
 
@@ -187,7 +187,7 @@ The concatenated labels of the node is called a path name. The absolute path nam
 
 The organisation of the UNIX file system is a logical disk of contiguous disk blocks. 
 
-![Screen Shot 2020-06-10 at 1.11.59 pm.png](resources/674909D686A7D9EFA5DC9EBEA4A72481.png =1129x276)
+![Screen Shot 2020-06-10 at 1.11.59 pm.png](resources/674909D686A7D9EFA5DC9EBEA4A72481.png)
 
 - __boot block:__ Loaded into main memory at system boot time
 - __superblock:__ info re: FS e.g. size, unallocated blocks, unused inodes
@@ -224,7 +224,7 @@ To mount a remote name space, you need to specify
 
 **Describe the NFS.**
 
-![Screen Shot 2020-06-10 at 1.31.12 pm.png](resources/320C6D597E5D0E8F4068D1A9865A11F0.png =718x364)
+![Screen Shot 2020-06-10 at 1.31.12 pm.png](resources/320C6D597E5D0E8F4068D1A9865A11F0.png)
 
 The NFS has 3 layers:
 1) __UNIX file-system interface__: open, read, write, close etc. + file descriptors
@@ -288,13 +288,13 @@ You can have a hierarchical cache, i.e. caching at multiple points between clien
 
 Caching is great for static traffic but not so efficient for dynamic traffic.
 
-![hierarchical-caching.gif](resources/0926D0989C35A455B1726ECC8E205701.gif =473x512)
+![hierarchical-caching.gif](resources/0926D0989C35A455B1726ECC8E205701.gif)
 
 ---
 
 **Describe DNS w.r.t.**
 
-![Screen Shot 2020-06-10 at 2.16.06 pm.png](resources/45908F8F7944ABAE3ACFF278FA5221B5.png =1037x587)
+![Screen Shot 2020-06-10 at 2.16.06 pm.png](resources/45908F8F7944ABAE3ACFF278FA5221B5.png)
 
 The DNS is a name space for hostname to IP address translation. Many IP addresses can correspond to one name. 
 
@@ -358,10 +358,6 @@ Inserting records involves a few steps
 2) Creating the authoritative server type A record and a MX record. 
 
 ---
-
-
-
-
 
 
 

@@ -65,7 +65,7 @@ Two large tables $R$ and $S$ are partitioned into $n$ and $m$ parts respectively
 
 Then, we have process $P_{i, j}$ compare the tuples of $S_{i}$ and $R_{j}$. The processor computes the join locally to produce the join result.
 
-![Screen Shot 2020-06-09 at 6.04.09 pm.png](resources/412404282C8F6EE711A5ED05DCC9EB41.png =868x662)
+![Screen Shot 2020-06-09 at 6.04.09 pm.png](resources/412404282C8F6EE711A5ED05DCC9EB41.png)
 
 Broadcast join is a special case of fragment-and-replicate join, where $n$ or $m$ equals one.
 
@@ -147,7 +147,7 @@ For example, multiple inputs have different formats will require differeent Mapp
 
 Values are grouped based on a key - so you need a way to label and differentiate keys from different input data. Special handling is required to ensure that the labelled keys maintain their original partition position and the values from the key are grouped as a list to be sent to the same reduce function.
 
-![Screen Shot 2020-06-18 at 10.08.28 pm.png](resources/86164736932907BFFD5905DCF36D70F6.png =781x402)
+![Screen Shot 2020-06-18 at 10.08.28 pm.png](resources/86164736932907BFFD5905DCF36D70F6.png)
 
 **How does secondary sorting work in Hadoop?**
 

@@ -200,7 +200,7 @@ for s in S:
     add <s, r> to output 
 ```
 
-![Screen Shot 2020-06-11 at 9.15.07 pm.png](resources/A568507655F661F49AAD87E7B3569963.png =618x230)
+![Screen Shot 2020-06-11 at 9.15.07 pm.png](resources/A568507655F661F49AAD87E7B3569963.png)
 
 The cost is 
 
@@ -261,7 +261,7 @@ $$R\bowtie S$$
 
 The partition using the radix looks like:
 
-![Screen Shot 2020-06-11 at 11.09.42 pm.png](resources/FC69127B17A1ABC48EF366A44F26A000.png =856x344)
+![Screen Shot 2020-06-11 at 11.09.42 pm.png](resources/FC69127B17A1ABC48EF366A44F26A000.png)
 
 __Radix__ := value of an integer at a particular position (using its base)
 __Prefix sum__ := running total of a sequence of numbers e.g. [1, 2, 3, 4, 5], then prefix sum is [1, 3, 6, 10, 15].
@@ -269,7 +269,7 @@ __Cache locality__ := the likelihood of successive operations being in the cache
 
 The recursion continues (step 4) until we get small enough partitions
 
-![Screen Shot 2020-06-11 at 11.12.56 pm.png](resources/40ADBDAA99796856B8452705DC13F9B4.png =856x344)
+![Screen Shot 2020-06-11 at 11.12.56 pm.png](resources/40ADBDAA99796856B8452705DC13F9B4.png)
 
 Let $p$ is the number of passes. Then the expression for the number of passes is
 
@@ -279,7 +279,7 @@ This depends on the size of $R$ and size of cache $s_{c}$.
 
 Note: From the lecture slides, the comparison looks like
 
-![Screen Shot 2020-06-11 at 11.14.28 pm.png](resources/0DC2A59EAC8E3994B5567BED73C39ADC.png =1132x731)
+![Screen Shot 2020-06-11 at 11.14.28 pm.png](resources/0DC2A59EAC8E3994B5567BED73C39ADC.png)
 
 ---
 

@@ -2,7 +2,7 @@
 
 **Briefly sketch the internal layer of a DBMS.**
 
-![Screen Shot 2020-06-13 at 2.18.41 am.png](resources/9FA32378A360495938353898061763F4.png =415x409)
+![Screen Shot 2020-06-13 at 2.18.41 am.png](resources/9FA32378A360495938353898061763F4.png)
 
 ---
 

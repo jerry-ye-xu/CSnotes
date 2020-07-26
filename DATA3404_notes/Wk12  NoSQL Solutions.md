@@ -32,7 +32,7 @@ The advantages are similar to the drivers of course, but a different perspective
 
 **Draw up a table of characteristics for each of the aforementioned 4 types of NoSQL databases.**
 
-![Screen Shot 2020-06-17 at 11.36.39 am.png](resources/662B0DAA26C2C21976C2E2F6BA550E4D.png =925x659)
+![Screen Shot 2020-06-17 at 11.36.39 am.png](resources/662B0DAA26C2C21976C2E2F6BA550E4D.png)
 
 ---
 
@@ -56,7 +56,7 @@ b) **Implementation**
 
 A huge dstributed hash table with replication at the nodes following the primary copy. 
 
-![Screen Shot 2020-06-17 at 12.52.45 pm.png](resources/3E53324100CA9FAF2A433DF4C0E87C14.png =791x563)
+![Screen Shot 2020-06-17 at 12.52.45 pm.png](resources/3E53324100CA9FAF2A433DF4C0E87C14.png)
 
 Dynamo uses virtual nodes instead of physical nodes to help balance potentially uneven distribution of hashing. 
 
@@ -231,9 +231,9 @@ The basic structure of HBase requires a slightly deeper dive as it is beyond jus
 
 Have a look at the two diagrams below. They give an idea of HBase's basic structure.
 
-![Screen Shot 2020-06-17 at 4.12.00 pm.png](resources/D574C441B100DF2E7C7AD523C185D549.png =703x265)
+![Screen Shot 2020-06-17 at 4.12.00 pm.png](resources/D574C441B100DF2E7C7AD523C185D549.png)
 
-![Screen Shot 2020-06-17 at 4.12.12 pm.png](resources/A89B5A6C684C00B8D0E4CE93C1CBD445.png =683x499)
+![Screen Shot 2020-06-17 at 4.12.12 pm.png](resources/A89B5A6C684C00B8D0E4CE93C1CBD445.png)
 
 So we have the following components:
 
@@ -278,11 +278,11 @@ When a table is first created, HBase will allocate one region for the table by d
 
 The diagram below gives an intuitiion of what the storage implementation looks like
 
-![Screen Shot 2020-06-17 at 4.58.25 pm.png](resources/6A5EEFA8E5A4805DA8EE1B57725B4F5F.png =683x464)
+![Screen Shot 2020-06-17 at 4.58.25 pm.png](resources/6A5EEFA8E5A4805DA8EE1B57725B4F5F.png)
 
 The RegionServer process manages the regions that are distrbuted around the cluster. For HBase, there is Master node and multiple RegionServers. This configuration is built on-top of HDFS and Zookeeper. Hence the fail-safety comes through HDFS replication. 
 
-![Screen Shot 2020-06-17 at 5.07.41 pm.png](resources/4B3DFC0B448D1404D42F511FD74F3AAB.png =672x398)
+![Screen Shot 2020-06-17 at 5.07.41 pm.png](resources/4B3DFC0B448D1404D42F511FD74F3AAB.png)
 
 The Master manages schema edits and reallocation of regions when crashes happen. It holds a light load.
 
@@ -303,7 +303,7 @@ The hierarchy is like
           - has __MemStore__ that takes on Region writes and is flushed when full
           - Flush adds a __StoreFile__; no in-place updates or inserts to existing StoreFiles needed and is also not supported by HDFS
 
-![Screen Shot 2020-06-17 at 5.13.19 pm.png](resources/CEDE07921CB3B7ED8B4A5A07CA08A673.png =700x441)
+![Screen Shot 2020-06-17 at 5.13.19 pm.png](resources/CEDE07921CB3B7ED8B4A5A07CA08A673.png)
 
 d) **With its storage implementation in mind, describe the implementation of its operations**
 
@@ -333,11 +333,11 @@ a) **Some advantages of its document-model storage**
 
 MongoDB uses a document storage model that contains nested key-value pairs for maximum flexibility. Just think JSON files.
 
-![Screen Shot 2020-06-17 at 5.22.52 pm.png](resources/517805B00A8E50827347425ECDE4B87E.png =584x319)
+![Screen Shot 2020-06-17 at 5.22.52 pm.png](resources/517805B00A8E50827347425ECDE4B87E.png)
 
 For example the JSON can look like this:
 
-![Screen Shot 2020-06-17 at 5.28.35 pm.png](resources/B8EC17AE27DEDF8546C7DE52ADCD65D2.png =392x418)
+![Screen Shot 2020-06-17 at 5.28.35 pm.png](resources/B8EC17AE27DEDF8546C7DE52ADCD65D2.png)
 
 The data is strongly typed and adaptable to change (polymorphic, dynamic and govern (enforcing structure with JSON schema)).
 
@@ -345,29 +345,29 @@ Given that JSON-style documents map to objects then it is good for applications 
 
 However, the consequence of this data structure is that it does not support SQL queries as we know it.
 
-![Screen Shot 2020-06-17 at 5.28.12 pm.png](resources/EA9167D9139542E576037B33DBC3BD77.png =584x319)
+![Screen Shot 2020-06-17 at 5.28.12 pm.png](resources/EA9167D9139542E576037B33DBC3BD77.png)
 
 b) **Supported operations**
 
 - insertion: `CreateOne()`
 
-![Screen Shot 2020-06-17 at 5.43.27 pm.png](resources/C65282CC0FB591DDBBFCF2EF68AC42AE.png =483x122)
+![Screen Shot 2020-06-17 at 5.43.27 pm.png](resources/C65282CC0FB591DDBBFCF2EF68AC42AE.png)
 
 - get: `find()`
 
-![Screen Shot 2020-06-17 at 5.43.38 pm.png](resources/F86C96D4C88958D31A31ECC870326498.png =570x73)
+![Screen Shot 2020-06-17 at 5.43.38 pm.png](resources/F86C96D4C88958D31A31ECC870326498.png)
 
 - Implicity equality predicate and implicit conjunction (__and__)
 
-![Screen Shot 2020-06-17 at 5.44.55 pm.png](resources/74321DBE16072BD9EB452FB7D4A85570.png =558x46)
+![Screen Shot 2020-06-17 at 5.44.55 pm.png](resources/74321DBE16072BD9EB452FB7D4A85570.png)
 
 - Sorting
 
-![Screen Shot 2020-06-17 at 5.44.50 pm.png](resources/D499546DEF7B8EC06EA17494319F8A51.png =598x30)
+![Screen Shot 2020-06-17 at 5.44.50 pm.png](resources/D499546DEF7B8EC06EA17494319F8A51.png)
 
 - aggregations
 
-![Screen Shot 2020-06-17 at 5.45.06 pm.png](resources/E6A313924F19C5B692313D63C173614E.png =530x385)
+![Screen Shot 2020-06-17 at 5.45.06 pm.png](resources/E6A313924F19C5B692313D63C173614E.png)
 
 c) **Ideas behind implementation of its scalability**
 
@@ -397,7 +397,7 @@ d) **Indexing**
 
 MongoDB's data model supports secondary indexes e.g. B+ trees on any attribute, even nested ones. Multi-column indexes are good too.
 
-![Screen Shot 2020-06-17 at 5.59.40 pm.png](resources/1AE707A9AC8A68A0BC71D3113E8E4D0A.png =707x385)
+![Screen Shot 2020-06-17 at 5.59.40 pm.png](resources/1AE707A9AC8A68A0BC71D3113E8E4D0A.png)
 
 e) **Internal optimiser**
 
@@ -415,11 +415,11 @@ MongoDB's storage API allows different stores to be used e.g. WiredTiger main-me
 
 The big picture looks like this:
 
-![Screen Shot 2020-06-17 at 6.05.21 pm.png](resources/2793354773B6CFD10AC8196D0F00FBE6.png =592x312)
+![Screen Shot 2020-06-17 at 6.05.21 pm.png](resources/2793354773B6CFD10AC8196D0F00FBE6.png)
 
 The mmap structure looks like this:
 
-![Screen Shot 2020-06-17 at 6.06.52 pm.png](resources/6F63712468508DA364F9798AD6F0E320.png =653x333)
+![Screen Shot 2020-06-17 at 6.06.52 pm.png](resources/6F63712468508DA364F9798AD6F0E320.png)
 
 Let's discuss using mmap vs. WiredTiger storage
 
@@ -435,7 +435,7 @@ Mmap also loves using alot of RAM, and if you run out of memory sharding/scale-o
 
 __WiredTiger storage engine__
 
-![Screen Shot 2020-06-17 at 6.09.42 pm.png](resources/A2534FEE2752EF907F0F35A4DCA1F006.png =342x486)
+![Screen Shot 2020-06-17 at 6.09.42 pm.png](resources/A2534FEE2752EF907F0F35A4DCA1F006.png)
 
 WiredTiger provides many features, including:
 

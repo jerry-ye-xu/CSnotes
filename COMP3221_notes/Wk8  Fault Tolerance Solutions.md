@@ -109,7 +109,7 @@ Hence we would require ordered (reliable) message delivery.
 
 It has been theoretically proven that configurations of a distributed system are impossible to reach consensus with.
 
-![Screen Shot 2020-06-15 at 9.53.14 pm.png](resources/B9EF4F64010843E687D7BE658FDF8957.png =735x331)
+![Screen Shot 2020-06-15 at 9.53.14 pm.png](resources/B9EF4F64010843E687D7BE658FDF8957.png)
 
 ---
 
@@ -149,7 +149,7 @@ To prove that this is a valid consensus, we need to show that the validity, agre
 
 d) __A brief example__
 
-![Screen Shot 2020-06-15 at 10.36.35 pm.png](resources/DD22A272C654E80173657D6373FFA656.png =153x109)
+![Screen Shot 2020-06-15 at 10.36.35 pm.png](resources/DD22A272C654E80173657D6373FFA656.png)
 
 Consider this example where $p_{i}$ will broadcast it's value $i$.
 
@@ -173,7 +173,7 @@ Now, how this works is every process sends its values to every other process, an
 
 Assume that $p_{3}$ is a faulty process and sends letters instead of numbers.
 
-![Screen Shot 2020-06-15 at 11.02.52 pm.png](resources/758C6F150B70907C41333FA6F0B785A3.png =352x362)
+![Screen Shot 2020-06-15 at 11.02.52 pm.png](resources/758C6F150B70907C41333FA6F0B785A3.png)
 
 So let's have a look at what the nodes received
 
@@ -255,7 +255,7 @@ Even if a new coordinator is selected, we still cannot proceed until the last pa
 
 This is a problem as you would be blocking until the coordinator AND the participant return. And what if the either don't come back... 
 
-![Screen Shot 2020-06-16 at 12.31.06 am.png](resources/0899C4895123647CF35A1EB6560893F4.png =782x258)
+![Screen Shot 2020-06-16 at 12.31.06 am.png](resources/0899C4895123647CF35A1EB6560893F4.png)
 
 ---
 
@@ -298,7 +298,7 @@ __Disadvantages__
 - most practical systems have unbounded delay and process pauses, and thus this does not guarantee atomicity (some participant can just go down indefinitely and thus be out of date)
 - this protocol requires 3 round-trip-times to finish. This is potentially a big cost in terms of latency.
 
-![Screen Shot 2020-06-16 at 12.31.19 am.png](resources/F727A4ADC188742AA2788B6226A551DC.png =723x240)
+![Screen Shot 2020-06-16 at 12.31.19 am.png](resources/F727A4ADC188742AA2788B6226A551DC.png)
 
 ---
 

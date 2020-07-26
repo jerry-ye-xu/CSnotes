@@ -236,7 +236,7 @@ Threads are the smallest unit of CPU utilisation. Every process has at least onc
 
 **Sketch the diagram of a single vs. multi-thread sharing resources.**
 
-![IMG_764F96014E88-1.jpeg](resources/0B5A3D439F69932E123BE8DA23ABB8C2.jpg =2148x1000)
+![IMG_764F96014E88-1.jpeg](resources/0B5A3D439F69932E123BE8DA23ABB8C2.jpg)
 
 ---
 

@@ -110,7 +110,7 @@ The total cost is
 
 $$2N\times I/O$$
 
-![Screen Shot 2020-06-10 at 10.50.05 pm.png](resources/1E64091CE3F8EFE468B0C2B23F8C68D3.png =720x399)
+![Screen Shot 2020-06-10 at 10.50.05 pm.png](resources/1E64091CE3F8EFE468B0C2B23F8C68D3.png)
 
 __Merge phase__
 
@@ -122,7 +122,7 @@ Then we use two pointers, one on each page and iterate through until $B^{*}$ use
 
 Then we flush $B^{*}$ and continue. When a pointer finishes a buffer page it moves to the next one and we write in the next $S_{1, i+1}$ or $S_{2, j+1}$ depending on who finished.
 
-![Screen Shot 2020-06-10 at 10.50.18 pm.png](resources/208D6F9844A86731DA0553588865EF70.png =720x399)
+![Screen Shot 2020-06-10 at 10.50.18 pm.png](resources/208D6F9844A86731DA0553588865EF70.png)
 
 We repeat until everything has been sorted.
 

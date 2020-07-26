@@ -52,7 +52,7 @@ Blockchains cannot do everything by themselves. Components that perform compleme
 
 **Describe the use case for supply chains.**
 
-![Screen Shot 2020-06-19 at 11.43.39 pm.png](resources/3C3BFA91D2804170A9754D1AB1A71D81.png =1566x386)
+![Screen Shot 2020-06-19 at 11.43.39 pm.png](resources/3C3BFA91D2804170A9754D1AB1A71D81.png)
 
 - latency: refers to the logistics being confirmed and updated quickly so goods can move faster
 
@@ -79,7 +79,7 @@ Blockchains cannot do everything by themselves. Components that perform compleme
 
  You can have 2 main types, a public blockchain where the data agency controls only entries in the official index, or a consortium across agencies so that public access can be controlled through a portal.
  
- ![Screen Shot 2020-06-19 at 11.59.20 pm.png](resources/7FA8D01D5B1A44CE3D4646D272DCB199.png =522x366)
+ ![Screen Shot 2020-06-19 at 11.59.20 pm.png](resources/7FA8D01D5B1A44CE3D4646D272DCB199.png)
 
 ---
 
@@ -87,7 +87,7 @@ Blockchains cannot do everything by themselves. Components that perform compleme
 
 The current way to do remittance payments is as follows:
 
-![Screen Shot 2020-06-20 at 12.01.05 am.png](resources/E69A0096133CAE5E8BAA4A7F76D0E04E.png =763x363)
+![Screen Shot 2020-06-20 at 12.01.05 am.png](resources/E69A0096133CAE5E8BAA4A7F76D0E04E.png)
 
 As of now, the cost transparency is very low for remittance payments and also it takes a while to transfer this money.
 
@@ -95,7 +95,7 @@ Now, how do we ensure the money is legal? This is the biggest issue - regulators
 
 Note: KYC := "know your chains"
 
-![Screen Shot 2020-06-20 at 12.02.51 am.png](resources/39577599F3E10108CA9D0A2C56F5E8A4.png =517x697)
+![Screen Shot 2020-06-20 at 12.02.51 am.png](resources/39577599F3E10108CA9D0A2C56F5E8A4.png)
 
 ---
 
@@ -170,13 +170,13 @@ Someone from Sydney could connect to a pool in China, Europe etc.
 
 Below is a snapshot of the biggest minining pools for Blockchain.
 
-![Screen Shot 2020-06-20 at 1.00.24 am.png](resources/AC37CA8B4D3BD79B416397D794DE3F5F.png =960x661)
+![Screen Shot 2020-06-20 at 1.00.24 am.png](resources/AC37CA8B4D3BD79B416397D794DE3F5F.png)
 
 This is a bit ironic since a Blockchain is supposed to be a distributed, peer-verified network but the mining power is gradually being centralised.
 
 Furthermore, if you look at the pool of Ethereum miners, you'll notice that they are all interconnected. Indeed, amongst the 10 largest pools of mining pools, 7 of them rely on a particular group called AS and represent about 87% of the mining power.
 
-![Screen Shot 2020-06-20 at 1.04.48 am.png](resources/5A677887754D5D4BA4CE39A9EADF2529.png =570x410)
+![Screen Shot 2020-06-20 at 1.04.48 am.png](resources/5A677887754D5D4BA4CE39A9EADF2529.png)
 
 It's highly unlikely in this case we can do any attacks since the connections between the ASes used by the major public pools are so strong, it will be difficult to partition the network in order to double spend.
 
@@ -196,13 +196,13 @@ Ethereum block difficulty levels are adjusted very frequently in order to keep b
 
 We set up the adversary similar to how we would attack a public blockchain.
 
-![Screen Shot 2020-06-20 at 1.22.30 am.png](resources/49A9A3748D9DA8BBF35CBE2B53374705.png =865x344)
+![Screen Shot 2020-06-20 at 1.22.30 am.png](resources/49A9A3748D9DA8BBF35CBE2B53374705.png)
 
 Essentially a successful attack is when we add a transaction and wait for `k=12` blocks to be appended afterwards, which Ethereum then considers the block holding the transaction comitted and the trade is made official i.e. the block becomes immutable. However, later on the transaction disappears because it will be overwritten by the correct branch. However, the physical goods have already been exchanged.
 
 Below is a graph of the success rate of attacks.
 
-![Screen Shot 2020-06-20 at 1.12.05 am.png](resources/06F23E767463F50267B7BA27C5EADAF3.png =710x260)
+![Screen Shot 2020-06-20 at 1.12.05 am.png](resources/06F23E767463F50267B7BA27C5EADAF3.png)
 
 ---
 
@@ -210,7 +210,7 @@ Below is a graph of the success rate of attacks.
 
 The main difference is that the VMs are linked by a Ethernet switch in a private blockchain.
 
-![Screen Shot 2020-06-20 at 1.23.35 am.png](resources/E6097A3A6F7761502D1CAD5FFC2AEC16.png =712x518)
+![Screen Shot 2020-06-20 at 1.23.35 am.png](resources/E6097A3A6F7761502D1CAD5FFC2AEC16.png)
 
 Then we can do ARP spoofing to become a man-in-the-middle and partition the network.
 

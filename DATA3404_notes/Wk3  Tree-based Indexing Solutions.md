@@ -26,7 +26,7 @@ $$\text{index lookup cost} + \text{record retrieval cost} < \text{file scan cost
 **What is the difference between **
 a) **Cluster and non-clustered data structure?**
 
-![Screen Shot 2020-06-13 at 10.21.02 pm.png](resources/C8CAF2326B09BA4658CC3909855FD856.png =721x230)
+![Screen Shot 2020-06-13 at 10.21.02 pm.png](resources/C8CAF2326B09BA4658CC3909855FD856.png)
 
 A clustered index is when (most) of the logical sorts of the data directly corresponds to the physical storage of the data (see LHS of diagram above).
 
@@ -63,7 +63,7 @@ If we are indexing over candidate keys (which are required to be unique w.r.t ea
 
 **Intuitively describe tree-based indexing.**
 
-![Screen Shot 2020-06-13 at 9.58.08 pm.png](resources/436403E052DDF0013B94AC0506DA1142.png =560x244)
+![Screen Shot 2020-06-13 at 9.58.08 pm.png](resources/436403E052DDF0013B94AC0506DA1142.png)
 
 For tree indexes, the none-leaf nodes contains pointers to the index pages. For each index page, you have pointers on the LHS and RHS of entries.
 
@@ -89,7 +89,7 @@ The issue with ISAM access is that its index is static. This presents a problem 
 
 It is also inefficient is if the table is dynamic and being subject to constant change.
 
-![Screen Shot 2020-06-13 at 10.13.47 pm.png](resources/6E3F6EB3E3947C4AF2EC01F2B42A874D.png =689x270)
+![Screen Shot 2020-06-13 at 10.13.47 pm.png](resources/6E3F6EB3E3947C4AF2EC01F2B42A874D.png)
 
 ---
 
@@ -115,7 +115,7 @@ A B+ tree of __order d__ and __height h__ is a tree with the following propertie
 
 __Searching__
 
-![Screen Shot 2020-06-13 at 10.36.20 pm.png](resources/A55AEEA275265BFC0F6B5C97AAC4B264.png =620x83)
+![Screen Shot 2020-06-13 at 10.36.20 pm.png](resources/A55AEEA275265BFC0F6B5C97AAC4B264.png)
 
 ```{pseudocode}
 Searching for value L.

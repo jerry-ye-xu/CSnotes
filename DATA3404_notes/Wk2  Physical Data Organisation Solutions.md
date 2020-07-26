@@ -31,7 +31,7 @@ Furthermore, read/write operations from disk to RAM is high-cost so requires us 
 
 **Briefly describe the components of a hard drive. Drawing a picture might help.**
 
-![Screen Shot 2020-06-13 at 11.42.49 pm.png](resources/724642CEE2AC242E813F457A6F78E20D.png =748x423)
+![Screen Shot 2020-06-13 at 11.42.49 pm.png](resources/724642CEE2AC242E813F457A6F78E20D.png)
 
 ---
 
@@ -39,11 +39,11 @@ Furthermore, read/write operations from disk to RAM is high-cost so requires us 
 
 The "access gap" is the difference in read/write operations between disc and main memory data.
 
-![Screen Shot 2020-06-13 at 11.43.54 pm.png](resources/0DCFD62680D49B75DB8855580D3DE20D.png =718x343)
+![Screen Shot 2020-06-13 at 11.43.54 pm.png](resources/0DCFD62680D49B75DB8855580D3DE20D.png)
 
 You can see an analogy of the problem using the diagram below.
 
-![Screen Shot 2020-06-13 at 11.44.02 pm.png](resources/3E558402D2133D1128DED0EA779CD440.png =682x380)
+![Screen Shot 2020-06-13 at 11.44.02 pm.png](resources/3E558402D2133D1128DED0EA779CD440.png)
 
 ---
 
@@ -84,13 +84,13 @@ e.g. heap files, sorted files, indexes.
 
 __Fixed length records__
 
-![Screen Shot 2020-06-14 at 12.14.10 am.png](resources/767B1F10B0907B402663D28F48485273.png =658x273)
+![Screen Shot 2020-06-14 at 12.14.10 am.png](resources/767B1F10B0907B402663D28F48485273.png)
 
 This layout is clearly inflexible and doesn't accommodate for indexing. You can see the number of records inside the page and which pages are empty using a bitmap (page on RHS).
 
 __Variable length records__
 
-![Screen Shot 2020-06-14 at 12.14.25 am.png](resources/BA163E627EB161849C6A63882EF60275.png =632x336)
+![Screen Shot 2020-06-14 at 12.14.25 am.png](resources/BA163E627EB161849C6A63882EF60275.png)
 
 Consider the 3 options above:
 
@@ -100,7 +100,7 @@ Consider the 3 options above:
 
 __Slotted Page structure for variable length records__
 
-![Screen Shot 2020-06-14 at 12.15.43 am.png](resources/78D052091E30A4A25B14B8A487311111.png =745x366)
+![Screen Shot 2020-06-14 at 12.15.43 am.png](resources/78D052091E30A4A25B14B8A487311111.png)
 
 Here we see how a typical page is implemented in a variety of DBMS. We have an index of directories, free space allocated and a number indicating how many slots on the page.
 
@@ -112,7 +112,7 @@ Notice the specific pointer (blue) that points to the start of the free space.
 
 **Briefly describe the row format in PostgreSQL?**
 
-![Screen Shot 2020-06-14 at 12.10.39 am.png](resources/E28585BBA50F7A277ECC8F0E1879417D.png =658x124)
+![Screen Shot 2020-06-14 at 12.10.39 am.png](resources/E28585BBA50F7A277ECC8F0E1879417D.png)
 
 RowHeader: Multiple bytes with flags and row visibility information
 NullBitmap: 0 or ((|columns| + 7)/8) Bytes indicating which bits are null. Note that it is __1 for NULL__ and __0 otherwise__.
@@ -138,13 +138,13 @@ b) read
 c) query
 d) write
 
-![Screen Shot 2020-06-14 at 12.23.13 am.png](resources/1EF25033E5BAF525C1A3A6C8F7C85FEA.png =671x436)
+![Screen Shot 2020-06-14 at 12.23.13 am.png](resources/1EF25033E5BAF525C1A3A6C8F7C85FEA.png)
 
 ---
 
 **What is a "wide column" data store?**
 
-![Screen Shot 2020-06-14 at 12.27.14 am.png](resources/1251D14A76A4506AE64320ADEE74DF2D.png =727x224)
+![Screen Shot 2020-06-14 at 12.27.14 am.png](resources/1251D14A76A4506AE64320ADEE74DF2D.png)
 
 A "wide column" store is when a DBMS stores data by column rather than row.
 
@@ -178,7 +178,7 @@ Typically the buffer does not immediately flush the changes to disc. Updating th
 
 **Briefly describe the components of a buffer manager.**
 
-![Screen Shot 2020-06-14 at 12.33.26 am.png](resources/89714535DDEE90CFF0E3D549775964DF.png =368x477)
+![Screen Shot 2020-06-14 at 12.33.26 am.png](resources/89714535DDEE90CFF0E3D549775964DF.png)
 
 ```{pseudocode}
 If requested page not in buffer:
@@ -213,13 +213,13 @@ $$\frac{\big\lvert\text{page requests}\big\rvert - \big\lvert\text{physical I/Os
 - MRU
 - LFU
 
-![Screen Shot 2020-06-14 at 12.50.09 am.png](resources/C4D12E543EE43DE6DE1A5523241B788D.png =724x357)
+![Screen Shot 2020-06-14 at 12.50.09 am.png](resources/C4D12E543EE43DE6DE1A5523241B788D.png)
 
 ---
 
 **What is clock? How does it work?**
 
-![Screen Shot 2020-06-14 at 12.53.59 am.png](resources/FE2897A14E153390871C96D2A5121284.png =309x290)
+![Screen Shot 2020-06-14 at 12.53.59 am.png](resources/FE2897A14E153390871C96D2A5121284.png)
 
 A variant of LRU also known as "second chance".
 

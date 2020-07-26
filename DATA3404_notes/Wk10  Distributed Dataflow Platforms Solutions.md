@@ -8,7 +8,7 @@ __Key questions__
 
 **Draw a diagram of Flink's stack.**
 
-![Screen Shot 2020-06-13 at 12.06.19 am.png](resources/2E60827FC920454C5055EF81E302579F.png =683x301)
+![Screen Shot 2020-06-13 at 12.06.19 am.png](resources/2E60827FC920454C5055EF81E302579F.png)
 
 Note: The application master in Flink is different to Spark.
 
@@ -16,7 +16,7 @@ Note: The application master in Flink is different to Spark.
 
 **Draw a diagram of Flink's architecture.**
 
-![Screen Shot 2020-06-13 at 12.08.19 am.png](resources/26EDF9BB6AE84C96F5636B1B2B4348E1.png =723x452)
+![Screen Shot 2020-06-13 at 12.08.19 am.png](resources/26EDF9BB6AE84C96F5636B1B2B4348E1.png)
 
 ---
 
@@ -129,7 +129,7 @@ Whether to use combine or not depends on Flink's optimiser.
 
 **Describe the iterate operator.**
 
-![Screen Shot 2020-06-13 at 1.05.36 am.png](resources/E37086665AC7E14F850EAA5ABFB19A47.png =477x178)
+![Screen Shot 2020-06-13 at 1.05.36 am.png](resources/E37086665AC7E14F850EAA5ABFB19A47.png)
 
 Here we see an array of integers [1, 2, 3, 4, 5] being passed into the operator and incremented 10 times before the final result is released.
 
@@ -149,7 +149,7 @@ As you would expect, it builds a Cartesian product of the records of both inputs
 
 The UDF accepts a pair of records from each stream and can emit any number of records.
 
-![Screen Shot 2020-06-13 at 1.10.39 am.png](resources/041A10DBFF92D04F9C31DA7DDCA65FFB.png =248x178)
+![Screen Shot 2020-06-13 at 1.10.39 am.png](resources/041A10DBFF92D04F9C31DA7DDCA65FFB.png)
 
 ---
 
@@ -169,7 +169,7 @@ Operator function equi-joins both inputs on their record keys.
 
 The UDF accepts a pair of records from each stream and can emit any number of records.
 
-![Screen Shot 2020-06-13 at 1.28.14 am.png](resources/6A3FF44D97DE629FD7D48E42EA8288D4.png =322x178)
+![Screen Shot 2020-06-13 at 1.28.14 am.png](resources/6A3FF44D97DE629FD7D48E42EA8288D4.png)
 
 Equi-join is the most common. It may be hard to implement a theta-join properly with streaming data.
 
@@ -177,13 +177,13 @@ Equi-join is the most common. It may be hard to implement a theta-join properly 
 
 **What are the inter-node joins in Flink?**
 
-![Screen Shot 2020-06-13 at 1.32.28 am.png](resources/0E8495E97A60E55C756B1C7D6056DF1A.png =734x293)
+![Screen Shot 2020-06-13 at 1.32.28 am.png](resources/0E8495E97A60E55C756B1C7D6056DF1A.png)
 
 ---
 
 **What about the within-node (local) joins in Flink?**
 
-![Screen Shot 2020-06-13 at 1.32.48 am.png](resources/9EB481FBE54CBF5BDB9C277A6E64ED66.png =772x263)
+![Screen Shot 2020-06-13 at 1.32.48 am.png](resources/9EB481FBE54CBF5BDB9C277A6E64ED66.png)
 
 ---
 
@@ -219,13 +219,13 @@ Flink represents the data internally as `raw byte[]`.
 
 In its internal memory, it allocates 70% of free available JVM heap as `byte[]` segments and the internal operators use `allocate()` and `release()` on these segments.
 
-![Screen Shot 2020-06-13 at 1.59.51 am.png](resources/CC33513E2AA342337F6B87AC7035083B.png =650x240)
+![Screen Shot 2020-06-13 at 1.59.51 am.png](resources/CC33513E2AA342337F6B87AC7035083B.png)
 
 This reduces pressure on the Java garbage collector and ensures that there will most likely be no OOM errors.
 
 Flink also has its own serialisation stack that serialises all accepted data types to data segments. If more data needs to be processed than can be kept in memory, Flink spills to disk.
 
-![Screen Shot 2020-06-13 at 2.00.04 am.png](resources/55F7856B33346E034F788214E3419470.png =533x238)
+![Screen Shot 2020-06-13 at 2.00.04 am.png](resources/55F7856B33346E034F788214E3419470.png)
 
 ---
 

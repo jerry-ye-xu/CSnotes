@@ -6,7 +6,7 @@ Federated learning is a ML technique that trains an algorithm across multiple de
 
 The data samples between nodes (edge devices) are not exchanged. Since FL allows us to build a common ML model without sharing data, it addresses various issues such as data privacy, data security, access rights and accessing heterogeneous data.
 
-![Screen Shot 2020-06-12 at 1.01.33 am.png](resources/BE7DDD45364406BE07C83EDDE840EFE7.png =673x390)
+![Screen Shot 2020-06-12 at 1.01.33 am.png](resources/BE7DDD45364406BE07C83EDDE840EFE7.png)
 
 FL may use a central server to coordinator different steps of the algorithm act as a reference clock. You can also have a P2P system between FL models.
 
@@ -59,7 +59,7 @@ The idea is that the server will see only the aggregated value and not the indiv
 
 Below is a diagram illustrating this.
 
-![Screen Shot 2020-06-20 at 1.34.46 pm.png](resources/7997EE601F8E00EDA79F64C600E62893.png =747x368)
+![Screen Shot 2020-06-20 at 1.34.46 pm.png](resources/7997EE601F8E00EDA79F64C600E62893.png)
 
 ---
 
@@ -71,6 +71,6 @@ An algorithm is said to be differentially private if an observer seeing its outp
 
 For FL, differential privacy plays a role by clipping weight updates to limit the contribution of an individual node and the server will add noise when combining updates.
 
-![Screen Shot 2020-06-20 at 1.35.29 pm.png](resources/6F7E9D6EB3C0417B9C4CB30CF3437721.png =772x368)
+![Screen Shot 2020-06-20 at 1.35.29 pm.png](resources/6F7E9D6EB3C0417B9C4CB30CF3437721.png)
 
 ---

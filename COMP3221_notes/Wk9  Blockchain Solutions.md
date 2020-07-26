@@ -8,7 +8,7 @@ The pointer is the representation of a hash of the destination block that the so
 
 The first block in the chain is called a __genesis block__.
 
-![Screen Shot 2020-06-10 at 11.26.55 pm.png](resources/0F7C1004B0AFF833F3DB641221997163.png =743x153)
+![Screen Shot 2020-06-10 at 11.26.55 pm.png](resources/0F7C1004B0AFF833F3DB641221997163.png)
 
 ---
 
@@ -74,7 +74,7 @@ The first 50kb of a block is always set aside for high-priority transactions.
 
 The first block contains the __coinbase transaction__, which holds all the rewards for the block.
 
-![Screen Shot 2020-06-11 at 1.27.40 am.png](resources/532098F05191948F3B21C65CC336C0BE.png =541x213)
+![Screen Shot 2020-06-11 at 1.27.40 am.png](resources/532098F05191948F3B21C65CC336C0BE.png)
 
 The blockchain with a block at index $i$ will be decided when the chain reaches depth $i+k$ and a transaction will be committed if it belongs to that decided block.
 
@@ -86,13 +86,13 @@ For bitcoin, k=7. For ethereum, k=12.
 
 The block header is
 
-![Screen Shot 2020-06-11 at 12.15.32 am.png](resources/E49E564163FA6ECF5881EEC31AC5E550.png =619x224)
+![Screen Shot 2020-06-11 at 12.15.32 am.png](resources/E49E564163FA6ECF5881EEC31AC5E550.png)
 
 ---
 
 **What is a Merkle tree? How is it used in blockchain?**
 
-![merkle-tre.png](resources/83B9EA709AC55F2BC365DBA55597B093.png =488x304)
+![merkle-tre.png](resources/83B9EA709AC55F2BC365DBA55597B093.png)
 
 Every leaf node is the data block and every non-leaf node is a cryptographic hash of the labels of its child node.
 

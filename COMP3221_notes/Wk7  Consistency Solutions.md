@@ -98,7 +98,7 @@ If a process sees C, B and then A, then all other processes should see this orde
 
 Consider the example below.
 
-![Screen Shot 2020-06-13 at 4.36.33 pm.png](resources/E0708036338A01E0C902C2178097B2D9.png =871x201)
+![Screen Shot 2020-06-13 at 4.36.33 pm.png](resources/E0708036338A01E0C902C2178097B2D9.png)
 
 It doesn't matter that `W(x)a` was written first and seen later, what matters is that all the processes see `b` before `a`. 
 
@@ -114,9 +114,9 @@ You can do `a` then `b` of course for all processes.
 
 Consider this example.
 
-![Screen Shot 2020-06-13 at 4.42.42 pm.png](resources/65F692DFB2FB4B1D045CC6D99285DC5D.png =515x152)
+![Screen Shot 2020-06-13 at 4.42.42 pm.png](resources/65F692DFB2FB4B1D045CC6D99285DC5D.png)
 
-![Screen Shot 2020-06-13 at 4.42.49 pm.png](resources/77D13CC86245E622F7EBCFB3EC8C7D10.png =740x152)
+![Screen Shot 2020-06-13 at 4.42.49 pm.png](resources/77D13CC86245E622F7EBCFB3EC8C7D10.png)
 
 Here, we can never see the value of `A` begin read as zero, because the while loop holds until process 0 sets `flag = 1`.
 
@@ -136,7 +136,7 @@ $$\text{Sequential consistency} \Rightarrow \text{Causal consistency}$$
 
 and that the implication is not $\iff$. We can see this in the example below.
 
-![Screen Shot 2020-06-13 at 5.11.09 pm.png](resources/D0B5E184FD20195CF27F1D631696F2C9.png =733x180)
+![Screen Shot 2020-06-13 at 5.11.09 pm.png](resources/D0B5E184FD20195CF27F1D631696F2C9.png)
 
 For casual consistency, we deal with dependences between data items and guarantee that the order will occur sequentially.
 
@@ -144,7 +144,7 @@ So we need to be able to identify when two processes are concurrent and when two
 
 Let's look at the example.
 
-![Screen Shot 2020-06-13 at 5.11.18 pm.png](resources/957773CE50B594B8BF7E697E67EF29E0.png =907x180)
+![Screen Shot 2020-06-13 at 5.11.18 pm.png](resources/957773CE50B594B8BF7E697E67EF29E0.png)
 
 So here, we note that `R(x)a` and `W(x)b` occur sequentially on the same process. Hence, it may be that writing b to x depends on a computation involving reading the value of x. 
 
@@ -156,9 +156,9 @@ Hence there is no violation of causal consistency (only sequential consistency i
 
 For shared memory mulitiprocessors, commercialised memory models guarantee causal consistency.
 
-![Screen Shot 2020-06-13 at 5.52.05 pm.png](resources/1C9BDD7DBE7ABD4E1A03270C517E6FB8.png =701x151)
+![Screen Shot 2020-06-13 at 5.52.05 pm.png](resources/1C9BDD7DBE7ABD4E1A03270C517E6FB8.png)
 
-![Screen Shot 2020-06-13 at 5.52.14 pm.png](resources/1EB0E9B83D0AFC739AF98264D18B2B69.png =724x140)
+![Screen Shot 2020-06-13 at 5.52.14 pm.png](resources/1EB0E9B83D0AFC739AF98264D18B2B69.png)
 
 We can see the processes are dependent on each other, but we don't get any violates of causal consistency since the write in process 3 occurs after flag 1 and flag 2 are set.
 
@@ -170,7 +170,7 @@ We can see the processes are dependent on each other, but we don't get any viola
 
 This one is easy to undersyand. Writes done in a single process must be sequentially consistent, but writes from different processes don't need to be.
 
-![Screen Shot 2020-06-13 at 5.48.16 pm.png](resources/E461A6B77BE0326ED95747DEAA8E5779.png =616x202)
+![Screen Shot 2020-06-13 at 5.48.16 pm.png](resources/E461A6B77BE0326ED95747DEAA8E5779.png)
 
 As you can see in the example below, causal consistency is violated because `R(x)a` occurs before the other 2 writes, and sequential consistency is definitely violated.
 
@@ -228,7 +228,7 @@ This idea requires a voting system, where clients request and acquire permission
 
 Define a quorum system to be a set $S$ quorums that are mutually intersecting sets. That is, $\forall Q_{i}, Q_{j} \subseteq S, \; i \neq j, Q_{i} \cap Q_{j} \neq \varnothing$.
 
-![Screen Shot 2020-06-13 at 7.30.53 pm.png](resources/14834F128E1E771B06DD721BAB98D7AB.png =757x278)
+![Screen Shot 2020-06-13 at 7.30.53 pm.png](resources/14834F128E1E771B06DD721BAB98D7AB.png)
 
 Let $N$ be the total number of replicas. 
 
@@ -297,11 +297,11 @@ Consider the two examples below.
 **Give an example of serialisable and non-serialisable executions.**
 
 
-![Screen Shot 2020-06-13 at 8.00.16 pm.png](resources/1D2B4E22F4587D7EB65108C09A97498F.png =795x293)
+![Screen Shot 2020-06-13 at 8.00.16 pm.png](resources/1D2B4E22F4587D7EB65108C09A97498F.png)
 
 In the diagram above, we see that the program is not serialisable since we are writing `W(y)2` and reading `R(y)2` in the two different operations, which we assume here run concurrently.
 
-![Screen Shot 2020-06-13 at 8.00.22 pm.png](resources/14AC362150A19F57D8B786E1B5F5F9C6.png =795x293)
+![Screen Shot 2020-06-13 at 8.00.22 pm.png](resources/14AC362150A19F57D8B786E1B5F5F9C6.png)
 
 This above diagram shows `R(y)0` which is serialisable in the direction of the arrows, assuming that y is initialised to zero.
 
@@ -311,7 +311,7 @@ This above diagram shows `R(y)0` which is serialisable in the direction of the a
 
 That is, we have serialisability w.r.t to real atomic time (loosely speaking).
 
-![Screen Shot 2020-06-13 at 8.14.51 pm.png](resources/9D69BC434B06DDB36C54C87C9D71E726.png =724x132)
+![Screen Shot 2020-06-13 at 8.14.51 pm.png](resources/9D69BC434B06DDB36C54C87C9D71E726.png)
 
 ---
 
@@ -323,10 +323,10 @@ According to the lecture slides, linearisability is equivalent to sequential exe
 
 **Give an example of both a linearisable and non-linearisable sequence of executions. **
 
-![Screen Shot 2020-06-13 at 8.16.43 pm.png](resources/332DDBF69AA15099431197538E7C9A90.png =724x132)
+![Screen Shot 2020-06-13 at 8.16.43 pm.png](resources/332DDBF69AA15099431197538E7C9A90.png)
 
 In the diagram above `W(x)1` precedes the second `R(x)0` in real time. Hence this is not linearisable.
 
-![Screen Shot 2020-06-13 at 8.16.49 pm.png](resources/64C43730A06F38E50EC804E3197DAC5F.png =724x132)
+![Screen Shot 2020-06-13 at 8.16.49 pm.png](resources/64C43730A06F38E50EC804E3197DAC5F.png)
 
 Hence we can see that first `R(x)1` and `W(x)1` technically are concurrent since `R(x)1` does not strictly precede `W(x)1`. Hence the first `R(x)1` returning either zero or one without violating linearisability.

@@ -33,7 +33,7 @@ If the bucket is full, add a pointer to an new empty bucket. This is called a ov
 
 When searching for a key, the process will have to traverse through the linked list of overflowed pages. Hence the more overflowed pages, the worse the performance of the hash index.
 
-![Screen Shot 2020-06-16 at 11.27.39 pm.png](resources/90B411FC1721ED7EA7299144D8A3D1DB.png =435x226)
+![Screen Shot 2020-06-16 at 11.27.39 pm.png](resources/90B411FC1721ED7EA7299144D8A3D1DB.png)
 
 ---
 
@@ -65,7 +65,7 @@ When the bucket overflows, another bucket is created, and the pointers involved 
 
 Consider the example below:
 
-![Screen Shot 2020-06-16 at 11.42.00 pm.png](resources/8C7A1E99ECF3A987E94753C8E5232308.png =394x346)
+![Screen Shot 2020-06-16 at 11.42.00 pm.png](resources/8C7A1E99ECF3A987E94753C8E5232308.png)
 
 Here we have Bucket A being full. Suppose we were to add a key $k$ s.t. $h(k) = 20$.
 
@@ -75,7 +75,7 @@ This causes an overflow, then we would split that bucket. We double the pointer 
 
 By considering the first 3rd bits (starting from left), we can split the bucket as you can see in the diagram below.
 
-![Screen Shot 2020-06-16 at 11.39.43 pm.png](resources/6D786E5145503CCF384D345D32B41AEA.png =713x386)
+![Screen Shot 2020-06-16 at 11.39.43 pm.png](resources/6D786E5145503CCF384D345D32B41AEA.png)
 
 Finally, we do not forget to update the local depth of the buckets that are involved in the split. 
 
@@ -135,7 +135,7 @@ __Insertion__
 
 Given the $i^{\text{th}}$, the relevant hash functions are $h_{i}$ and $h_{i+1}$. If bucket doesn't exist yet for $h_{i+1}(k)$ then we can simply use $h_{i}(k)$.
 
-![Screen Shot 2020-06-17 at 2.03.57 am.png](resources/318212E5DCC4CDA3CB78980336DF9267.png =727x318)
+![Screen Shot 2020-06-17 at 2.03.57 am.png](resources/318212E5DCC4CDA3CB78980336DF9267.png)
 
 For an example, see this [YouTube tutorial](https://www.youtube.com/watch?v=Yw1ts57uL7c).
 
@@ -149,7 +149,7 @@ Bitmap indexing is a special type of indexing in which we use $n$ bits to repres
 
 For example, see the table below.
 
-![Screen Shot 2020-06-16 at 11.55.50 pm.png](resources/7E0659259D69B4CA98B3767A2B0F36BB.png =675x231)
+![Screen Shot 2020-06-16 at 11.55.50 pm.png](resources/7E0659259D69B4CA98B3767A2B0F36BB.png)
 
 This is fairly intuitive. 
 

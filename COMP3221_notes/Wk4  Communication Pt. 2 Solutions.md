@@ -33,7 +33,7 @@ Note: the receiver is responsible for handling out-of-order segments.
 
 Now, the following example should illustrate what happens during a 3-way handshake (that we will discuss in a later question)
 
-![Screen Shot 2020-06-17 at 9.33.32 pm.png](resources/3FB5B9909CC62E082484B0502A6D0C79.png =447x406)
+![Screen Shot 2020-06-17 at 9.33.32 pm.png](resources/3FB5B9909CC62E082484B0502A6D0C79.png)
 
 ---
 
@@ -65,7 +65,7 @@ $$\text{Timeout Interval} = \text{EstimatedRTT} + 4\times\text{DevRTT}$$
 
 **Illustrate some re-transmission scenarios**
 
-![Screen Shot 2020-06-17 at 9.43.38 pm.png](resources/328B81200E7CE2AE5585074BC5AFAC7D.png =739x484)
+![Screen Shot 2020-06-17 at 9.43.38 pm.png](resources/328B81200E7CE2AE5585074BC5AFAC7D.png)
 
 ---
 
@@ -103,11 +103,11 @@ TCP uses a sliding window flow control protocol. Each TCP segment has a received
 
 The sender must wait for an acknowledgement and window update before it can send more than that. The sender uses a "persist timer" to avoid a deadlock in case the message from either party was lost in transmission.
 
-![Screen Shot 2020-06-17 at 8.48.28 pm.png](resources/A63764B2E5E17D9176F6572BD74DC591.png =831x532)
+![Screen Shot 2020-06-17 at 8.48.28 pm.png](resources/A63764B2E5E17D9176F6572BD74DC591.png)
 
 The receiver will use the `rwnd` in the TCP header to inform the sender of its free buffer space. `rcvBuffer` size is set via the socket options (default it is 4Kb).
 
-![Screen Shot 2020-06-17 at 8.48.40 pm.png](resources/E4D6D6E1B790E7FED52F62256A946A6F.png =383x347)
+![Screen Shot 2020-06-17 at 8.48.40 pm.png](resources/E4D6D6E1B790E7FED52F62256A946A6F.png)
 
 ---
 
@@ -126,7 +126,7 @@ We have
 a) __additive increase:__ increase `cwnd` by 1 MSS every RTT until loss is detected
 b) __multiplicative decrease:__ cut `cwnd` by half after loss. 
 
-![Screen Shot 2020-06-17 at 8.56.03 pm.png](resources/15FE30597886E86D90CD09EA13DA00C0.png =769x264)
+![Screen Shot 2020-06-17 at 8.56.03 pm.png](resources/15FE30597886E86D90CD09EA13DA00C0.png)
 
 The sender has to limit its transmission by the `cwnd` (congestion window). That is
 
@@ -136,7 +136,7 @@ Since the congestion window is dynamic, so is the TCP sending rate;
 
 $$\text{rate} \sim \frac{\text{cwnd}}{\text{RTT}}\text{bytes/sec}$$
 
-![Screen Shot 2020-06-17 at 9.02.45 pm.png](resources/A10999110BEEB3FEA4E8AAD61F8A3C98.png =324x236)
+![Screen Shot 2020-06-17 at 9.02.45 pm.png](resources/A10999110BEEB3FEA4E8AAD61F8A3C98.png)
 
 So how does it all work?
 
@@ -166,13 +166,13 @@ Flow control deals with how much data the node itself is receiving whereas conge
 
 **What has to happen before 2 access points on send each other data with TCP?**
 
-![Screen Shot 2020-06-17 at 10.12.19 pm.png](resources/7C6421D5E5853323F913C830B6CA6681.png =806x410)
+![Screen Shot 2020-06-17 at 10.12.19 pm.png](resources/7C6421D5E5853323F913C830B6CA6681.png)
 
 ---
 
 **How do you close the connection?**
 
-![Screen Shot 2020-06-17 at 10.13.23 pm.png](resources/B6129A9EA2AF7A56642CBCC80F51F2E5.png =806x469)
+![Screen Shot 2020-06-17 at 10.13.23 pm.png](resources/B6129A9EA2AF7A56642CBCC80F51F2E5.png)
 
 ---
 
@@ -189,14 +189,14 @@ Flow control deals with how much data the node itself is receiving whereas conge
 **Draw the timeline diagrams for synchronous and asynchronous calls.**
 
 __Synchronous__ 
-![Screen Shot 2020-06-17 at 10.18.48 pm.png](resources/6717FE647603272FD110591C8B73DB77.png =492x317)
+![Screen Shot 2020-06-17 at 10.18.48 pm.png](resources/6717FE647603272FD110591C8B73DB77.png)
 
 __Asynchronous__
-![Screen Shot 2020-06-17 at 10.18.56 pm.png](resources/2CB9C875C3617BCDC0B4A38CA7F7902A.png =556x317)
+![Screen Shot 2020-06-17 at 10.18.56 pm.png](resources/2CB9C875C3617BCDC0B4A38CA7F7902A.png)
 
 __2 Asynchronous RPCs__
 
-![Screen Shot 2020-06-17 at 10.21.05 pm.png](resources/35D48D07B8775C98C6011396B08BEC04.png =736x331)
+![Screen Shot 2020-06-17 at 10.21.05 pm.png](resources/35D48D07B8775C98C6011396B08BEC04.png)
 
 ---
 
@@ -221,7 +221,7 @@ The DCE supplies a framework and toolkit for developing client/server applicatio
 - Authentication service
 - Distributed file system
 
-![Screen Shot 2020-06-17 at 10.22.10 pm.png](resources/02E0EFD29430AC2A5950A7196E14EC6E.png =781x301)
+![Screen Shot 2020-06-17 at 10.22.10 pm.png](resources/02E0EFD29430AC2A5950A7196E14EC6E.png)
 
 ---
 
@@ -243,7 +243,7 @@ Data routing is also more flexible, as multi-path forwarding is possible.
 
 Multiple layers of encapsulation can lead to alot of overhead and increasing the number of overlay networks can complicate the design. Lastly, the physical network isn't able to automatically adjust to changes so manual re-configuring may sometimes be required.
 
-![overlay.png](resources/80C4DFAD502EC9242C8A5D9444EF31FF.jpg =500x340)
+![overlay.png](resources/80C4DFAD502EC9242C8A5D9444EF31FF.jpg)
 
 ---
 

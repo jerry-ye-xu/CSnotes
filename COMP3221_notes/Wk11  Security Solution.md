@@ -50,7 +50,7 @@ The key has 64bits but only 56 of it is used, as 8 of them are used for checking
 
 The key is adjusted every round to create a different key for encryption
 
-![Screen Shot 2020-06-12 at 5.39.17 pm.png](resources/1343BB025BBE0E37FF725DC8B264A2C8.png =391x472)
+![Screen Shot 2020-06-12 at 5.39.17 pm.png](resources/1343BB025BBE0E37FF725DC8B264A2C8.png)
 
 Here we can see in the diagram there is an "initial" and "final" permutation.
 
@@ -58,7 +58,7 @@ These actions are inverses of each other and are used for loading blocks. They p
 
 We discuss what happens in each round.
 
-![Screen Shot 2020-06-12 at 5.48.21 pm.png](resources/9327B612A11B5A0B3D6993DDEACE65AE.png =321x388)
+![Screen Shot 2020-06-12 at 5.48.21 pm.png](resources/9327B612A11B5A0B3D6993DDEACE65AE.png)
 
 Here $\oplus$ stands for `XOR`. The encryption strategy is clear from the diagram.
 
@@ -71,7 +71,7 @@ where $f$ is the hash function, and $K_{i}$ is the 48bit key for round $i$.
 
 Now we discuss how to generate the key for each round.
 
-![Screen Shot 2020-06-12 at 5.51.13 pm.png](resources/F66FE7A13BEB16D8D54ACBC515711670.png =475x368)
+![Screen Shot 2020-06-12 at 5.51.13 pm.png](resources/F66FE7A13BEB16D8D54ACBC515711670.png)
 
 We break the master 56bit key in half, rotate one left and the other right by 1-2 bits and then extract 24bits from each of the halves. This serves as $K_{i}$.
 
@@ -168,7 +168,7 @@ Authentication is a process that confirms the identity of a another party involv
 
 **Describe a simple strategy for secret key authentication and explain why it fails.**
 
-![Screen Shot 2020-06-12 at 6.53.52 pm.png](resources/12C4C76C0C1644509BE022300FA1DE7E.png =420x275)
+![Screen Shot 2020-06-12 at 6.53.52 pm.png](resources/12C4C76C0C1644509BE022300FA1DE7E.png)
 
 In the diagram above, we see that Alice presents a challenge to Bob and he encrypts it with a key and sends his own challenge to the Alice, who then encrypts that challenge and sends it back.
 
@@ -203,7 +203,7 @@ Hence the KDC can manage the key that both parties use to communicate, meaning t
 
 **Describe the public key authentication process.**
 
-![Screen Shot 2020-06-12 at 8.34.42 pm.png](resources/7757CAC80C68547F733E08DB4BE8D5D5.png =432x189)
+![Screen Shot 2020-06-12 at 8.34.42 pm.png](resources/7757CAC80C68547F733E08DB4BE8D5D5.png)
 
 Here the procedure is similar to the very first approach, but because we are using public keys, we can immediately encrypt using the public key and send the session key $K_{A, B}$ along using each other's public keys. 
 
@@ -237,7 +237,7 @@ Note: The cipher suite offers many different encryption algorithms like AES, RSA
 
 Below is a diagram summarising the steps
 
-![Screen Shot 2020-06-20 at 3.44.00 pm.png](resources/3F8AA97705CDAD7F4F6E759156F23ED7.png =401x443)
+![Screen Shot 2020-06-20 at 3.44.00 pm.png](resources/3F8AA97705CDAD7F4F6E759156F23ED7.png)
 
 ---
 
@@ -285,7 +285,7 @@ One of the most common methods is MFA, multi-factor authentication.
 
 The goal of integrity is to ascertain that the message received is the same one that we sent.
 
-![Screen Shot 2020-06-12 at 8.55.57 pm.png](resources/B02E85F11440457121CE53C70816015B.png =806x206)
+![Screen Shot 2020-06-12 at 8.55.57 pm.png](resources/B02E85F11440457121CE53C70816015B.png)
 
 For the method above, this may not be sufficient because the private can change or be exposed. Either way, you wouldn't know whether the private key is trustworthy or not or whether it's been compromised.
 
@@ -293,7 +293,7 @@ For the method above, this may not be sufficient because the private can change 
 
 **Describe a method to use checksums to determine whether the sent text message is correct.**
 
-![Screen Shot 2020-06-12 at 9.00.55 pm.png](resources/EBD919A071709D0B21486C2DA9B7D5E1.png =751x234)
+![Screen Shot 2020-06-12 at 9.00.55 pm.png](resources/EBD919A071709D0B21486C2DA9B7D5E1.png)
 
 Here the difference is that the private key is used to lock the hash message. Now, if the private key changes it doesn't matter because we just apply the public key, the public key is guaranteed to decrypt the hash message.
 
