@@ -7,8 +7,9 @@ This collection of notes includes:
 - ISYS2120: Data & Information Management (SQL notes only)
 - DATA3404: Data Science Platforms
 - COMP3221: Distributed System
+- SOFT2201: Software Construction and Design I
 
-### Reading the notes
+## Reading the notes
 
 You may want to clone the repository into your local computer and import it into Quiver/BoostNotes to read and see the pictures.
 
