@@ -22,7 +22,7 @@ void read_until_eol(FILE *fp, int loc) {
             if(line == NULL) {
                 perror("Error allocating memory.");
                 free(line);
-                exit(1); 
+                exit(1);
             }
         }
         // printf("Testing\n");
@@ -75,9 +75,9 @@ void read_backwards(FILE *fp, int nlines) {
     // printf("Hello?\n");
 }
 
-void read_forwards(FILE*fp, int nlines) {
+void read_forwards(FILE *fp, int nlines) {
     int nread = 0;
-    
+
     char chunk[128];
     size_t len = sizeof(chunk);
     char *line = malloc(len);
@@ -95,7 +95,7 @@ void read_forwards(FILE*fp, int nlines) {
             if(line == NULL) {
                 perror("Error allocating memory.");
                 free(line);
-                exit(1); 
+                exit(1);
             }
         }
         strncpy(line + len_used, chunk, len - len_used);
@@ -106,7 +106,7 @@ void read_forwards(FILE*fp, int nlines) {
             fputs(line, stdout);
             // fputs("\n", stdout);
             line[0] = '\0';
-            nread++;           
+            nread++;
         }
     }
 }
