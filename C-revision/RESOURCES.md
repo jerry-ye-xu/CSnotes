@@ -11,10 +11,14 @@
 - [Limitations](#limitations)
 - [Substantial Code Examples](#substantial-code-examples) 
 
+---
+
 ## C I/O
 
 - [puts and printf](https://stackoverflow.com/questions/2454474/what-is-the-difference-between-printf-and-puts-in-c)
 - [C I/O](https://www.programiz.com/c-programming/c-input-output)
+
+---
 
 ## Data Types
 
@@ -23,6 +27,11 @@
 - [reading char** argv](https://www.geeksforgeeks.org/command-line-arguments-in-c-cpp/)
 - [Asserting/comparing data types in C?](https://stackoverflow.com/questions/6280055/how-do-i-check-if-a-variable-is-of-a-certain-type-compare-two-types-in-c)
 - [strcmp()](https://www.programiz.com/c-programming/library-function/string.h/strcmp)
+- [Compare char in C](https://www.delftstack.com/howto/c/compare-char-in-c/)
+- [*arr[] vs. **arr](https://stackoverflow.com/questions/37932739/difference-between-arr-and-arr)
+- [What happens if you don't use a null terminator?](https://stackoverflow.com/questions/52323643/what-happens-in-c-if-you-dont-use-0-at-the-end-of-a-string)
+
+---
 
 ## Pointers
 
@@ -30,12 +39,18 @@
 - [Tutorials point: Pointer arithmetic](https://www.tutorialspoint.com/cprogramming/c_pointer_arithmetic.htm)
 - [What does deferencing a pointer mean?](https://stackoverflow.com/questions/4955198/what-does-dereferencing-a-pointer-mean)
 - [Top 20 pointer mistakes](https://www.acodersjourney.com/top-20-c-pointer-mistakes/)
+- [Function pointers quick guide](https://www.geeksforgeeks.org/function-pointer-in-c/)
+- [Printing out pointers](https://www.cs.yale.edu/homes/aspnes/pinewiki/C(2f)Pointers.html)
+
+---
 
 ## Structs
 
 - [initialising structs](https://stackoverflow.com/questions/14768230/malloc-for-struct-and-pointer-in-c)
 - [Check if Struct is NULL](https://stackoverflow.com/questions/25904993/how-to-check-if-a-struct-is-null-in-c-or-c)
 - [Struct inside a struct](https://stackoverflow.com/questions/5465759/malloc-of-arrays-and-structs-within-a-struct)
+
+---
 
 ## Malloc/calloc
 
@@ -45,9 +60,13 @@
 - [malloc() inside a function](https://stackoverflow.com/questions/2838038/c-programming-malloc-inside-another-function)
 - [Pass a pointer --> i.e. pass ptr of ptr](https://stackoverflow.com/questions/7927036/how-to-pass-over-a-pointer-and-allocate-space-on-heap)
 
+---
+
 ## Multi-dimensional Arrays
 
 - [Dynamically allocate a multi-dimensional array](http://c-faq.com/aryptr/dynmuldimary.html)
+
+---
 
 ## Compiling 
 
@@ -57,10 +76,14 @@
 - [Options for debugging](https://gcc.gnu.org/onlinedocs/gcc/Debugging-Options.html#Debugging-Options)
 - [Warning options](https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#Warning-Options)
 
+---
+
 ## Limitations
 
 - [Exceptions in C](https://stackoverflow.com/questions/2891766/how-can-i-throw-an-exception-in-c)
 - [Use of bool in C](https://www.geeksforgeeks.org/bool-in-c/)
+
+---
 
 ## Substantial Code Examples
 
@@ -68,3 +91,6 @@
 - [vstack 2018](https://github.com/chrishyland/COMP2017-AssignmentOne/blob/master/vstack.c)
 - [BFS in C](https://www.programiz.com/dsa/graph-bfs)
 - [Queue implementation in C](https://www.geeksforgeeks.org/queue-set-1introduction-and-array-implementation/)
+- [Read file line by line](https://solarianprogrammer.com/2019/04/03/c-programming-read-file-lines-fgets-getline-implement-portable-getline/)
+
+---
