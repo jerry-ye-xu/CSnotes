@@ -9,7 +9,8 @@
 - [Multi-dimensional Arrays](#multi-dimensional-arrays)
 - [Compiling](#compiling)
 - [Limitations](#limitations)
-- [Substantial Code Examples](#substantial-code-examples) 
+- [Tools](#tools)
+- [Substantial Code Examples](#substantial-code-examples)
 
 ---
 
@@ -35,6 +36,7 @@
 
 ## Pointers
 
+- [Everything you need ot know about Pointers in C](https://edoras.sdsu.edu/doc/c/pointers-1.2.2/)
 - [What is the difference between &*p and *&p](https://stackoverflow.com/questions/53935936/difference-between-p-vs-p)
 - [Tutorials point: Pointer arithmetic](https://www.tutorialspoint.com/cprogramming/c_pointer_arithmetic.htm)
 - [What does deferencing a pointer mean?](https://stackoverflow.com/questions/4955198/what-does-dereferencing-a-pointer-mean)
@@ -68,7 +70,7 @@
 
 ---
 
-## Compiling 
+## Compiling
 
 - [CS Utah: Compiling](https://www.cs.utah.edu/~zachary/isp/tutorials/separate/separate.html)
 - [.o vs. .out in C](https://stackoverflow.com/questions/58245469/o-vs-out-in-c)
@@ -85,6 +87,14 @@
 
 ---
 
+## Tools
+
+- [gnuplot quick reference](https://people.duke.edu/~hpgavin/gnuplot.html)
+- [gnuplot tutorial](http://physics.ucsc.edu/~medling/programming/gnuplot_tutorial_1/index.html)
+- [bitmap to C array](https://github.com/hoiberg/bitmapToC)
+- [`time` in linux](https://stackoverflow.com/questions/51642607/why-does-the-time-bash-builtin-write-to-stderr)
+
+---
 ## Substantial Code Examples
 
 - [COMP2017 Notes](https://github.com/jerry-ye-xu/CSnotes/tree/comp2017/COMP2017)
