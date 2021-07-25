@@ -1,0 +1,11 @@
+# Output settings
+set terminal svg size 800, 300
+set output 'out.svg'
+
+# Labels, Title and Data
+set key inside bottom right
+set xlabel 'Dimensions'
+set ylabel 'Time (s)
+set title 'NN-Resize Comparison'
+plot "times-16-32.txt" using 1:3 title 'real' with linespoints, \
+"times-16-32.txt" using 1:6 title 'total' with linespoints
