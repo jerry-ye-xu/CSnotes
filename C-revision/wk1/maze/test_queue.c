@@ -16,9 +16,9 @@ bool test_empty_queue() {
 
     queue = create_queue();
     test_res = min_(test_res, is_empty(queue));
-    
+
     ret_node = dequeue(queue);
-    test_res = min_(test_res, assert_coordinates(ret_node, -1, -1));    
+    test_res = min_(test_res, assert_coordinates(ret_node, -1, -1));
 
     return test_res;
 }
@@ -71,7 +71,7 @@ bool test_add_multiple_nodes() {
     ret_node = dequeue(queue);
     test_res = min_(test_res, assert_coordinates(ret_node, -1, -1));
 
-    return test_res; 
+    return test_res;
 }
 
 bool test_add_multiple_nodes_add_and_remove() {
@@ -85,15 +85,15 @@ bool test_add_multiple_nodes_add_and_remove() {
 
     // QUESTION: Why can't you do this?
     /*
-        enqueue(queue, create_node(2, 2)); 
+        enqueue(queue, create_node(2, 2));
         printf("queue->items[0]->x: (%d, %d)\n", queue->items[0]->x, queue->items[0]->y);
-        enqueue(queue, create_node(3, 4)); 
+        enqueue(queue, create_node(3, 4));
         printf("queue->items[0]->x: (%d, %d)\n", queue->items[0]->x, queue->items[0]->y);
-        enqueue(queue, create_node(2, 1)); 
+        enqueue(queue, create_node(2, 1));
         printf("queue->items[0]->x: (%d, %d)\n", queue->items[0]->x, queue->items[0]->y);
-        enqueue(queue, create_node(5, 4)); 
+        enqueue(queue, create_node(5, 4));
         printf("queue->items[0]->x: (%d, %d)\n", queue->items[0]->x, queue->items[0]->y);
-        
+
         ret_node = dequeue(queue);
         ret_node = dequeue(queue);
         ret_node = dequeue(queue);
@@ -125,7 +125,7 @@ bool test_add_multiple_nodes_add_and_remove() {
     test_res = min_(test_res, assert_coordinates(ret_node, -1, -1));
     test_res = min_(test_res, is_empty(queue));
 
-    return test_res; 
+    return test_res;
 }
 
 bool test_add_multiple_nodes_multiple_add_and_remove() {
@@ -183,7 +183,7 @@ bool test_add_multiple_nodes_multiple_add_and_remove() {
     ret_node = dequeue(queue);
     test_res = min_(test_res, assert_coordinates(ret_node, 2, 4));
 
-    return test_res; 
+    return test_res;
 }
 
 int main(int argc, char** argv) {
@@ -192,7 +192,7 @@ int main(int argc, char** argv) {
     tt = test_empty_queue();
     printf("|%d| test_empty_queue()\n", tt);
     t = min_(t, tt);
-    
+
     tt = test_add_one_node();
     printf("|%d| test_add_one_node()\n", tt);
     t = min_(t, tt);
@@ -209,5 +209,5 @@ int main(int argc, char** argv) {
     printf("|%d| test_add_multiple_nodes_multiple_add_and_remove()\n", tt);
     t = min_(t, tt);
 
-    return t ? 0: -1;
+    return t ? 0 : -1;
 }
