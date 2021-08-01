@@ -2,10 +2,11 @@
 #define STACK
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 struct Node {
     void* val;
-    struct node* next;
+    struct Node* next;
 };
 
 struct Stack {
@@ -16,5 +17,6 @@ struct Stack {
 void* pop(struct Stack* s);
 void push(struct Stack* s, void* data, size_t nbytes);
 void* peek(struct Stack* s);
+void free_stack(struct Stack* s);
 
 #endif
