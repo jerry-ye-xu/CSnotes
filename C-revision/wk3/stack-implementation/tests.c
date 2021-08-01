@@ -22,8 +22,8 @@ int test_empty_stack_peek() {
 
     free(top);
     free(stack);
-    return result == -1 ? 1 : 0;
 
+    return result == -1 ? 1 : 0;
 }
 
 int test_push_into_empty_stack() {
@@ -36,14 +36,11 @@ int test_push_into_empty_stack() {
     push(stack, d_ptr, sizeof(d_ptr));
     void *top = peek(stack);
 
-    // printf("top->val: %p\n", (void *) ((struct Node *)top)->val);
-    // printf("top->val: %d\n", *(int *)((struct Node *)top)->val);
-
     size_t size = stack->size;
     int result = *(int *)((struct Node*)top)->val;
 
-    free(stack->top);
-    free(stack);
+    free_stack(stack);
+
     return result == 50 && size ? 1 : 0;
 }
 
@@ -74,7 +71,6 @@ int test_push_into_non_empty_stack() {
     free_stack(stack);
 
     return !expected && size == 2 ? 1 : 0;
-
 }
 
 int test_push_into_non_empty_stack_then_pop() {
