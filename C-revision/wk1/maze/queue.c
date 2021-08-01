@@ -2,7 +2,7 @@
 
 struct Queue* create_queue() {
     struct Queue *q;
-    q = (struct Queue*) malloc(sizeof(struct Queue*));
+    q = (struct Queue*) malloc(sizeof(struct Queue));
     q->front = 0;
     q->rear = -1;
     return q;
@@ -36,9 +36,9 @@ void enqueue(struct Queue* q, struct Node *node) {
 
 struct Node* dequeue(struct Queue* q) {
     struct Node* node;
-    
-    if (is_empty(q)) { 
-        node = (struct Node*) malloc(sizeof(struct Node*));
+
+    if (is_empty(q)) {
+        node = (struct Node*) malloc(sizeof(struct Node));
         node->x = -1; node->y = -1;
     } else {
         node = q->items[q->rear];
