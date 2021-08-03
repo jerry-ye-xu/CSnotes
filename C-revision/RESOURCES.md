@@ -31,6 +31,8 @@
 - [Compare char in C](https://www.delftstack.com/howto/c/compare-char-in-c/)
 - [*arr[] vs. **arr](https://stackoverflow.com/questions/37932739/difference-between-arr-and-arr)
 - [What happens if you don't use a null terminator?](https://stackoverflow.com/questions/52323643/what-happens-in-c-if-you-dont-use-0-at-the-end-of-a-string)
+- [char *s vs. char s[]](https://www.geeksforgeeks.org/whats-difference-between-char-s-and-char-s-in-c/)
+- [strcpy](https://stackoverflow.com/questions/27636306/valgrind-address-is-0-bytes-after-a-block-of-size-8-allocd)
 
 ---
 
@@ -49,8 +51,10 @@
 ## Structs
 
 - [initialising structs](https://stackoverflow.com/questions/14768230/malloc-for-struct-and-pointer-in-c)
+- [Malloc for structs](https://stackoverflow.com/questions/2177391/allocating-memory-for-a-structure-in-c)
 - [Check if Struct is NULL](https://stackoverflow.com/questions/25904993/how-to-check-if-a-struct-is-null-in-c-or-c)
 - [Struct inside a struct](https://stackoverflow.com/questions/5465759/malloc-of-arrays-and-structs-within-a-struct)
+- [Assign values to struct](https://stackoverflow.com/questions/32698293/assign-values-to-structure-variables/43890427)
 
 ---
 
@@ -58,6 +62,7 @@
 
 - [Why does calloc exist?](https://vorpus.org/blog/why-does-calloc-exist/)
 - [Difference between malloc and calloc](https://www.geeksforgeeks.org/difference-between-malloc-and-calloc-with-examples/)
+- [Quick guide](https://www.geeksforgeeks.org/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/)
 - [Casting the result of malloc](https://stackoverflow.com/questions/605845/do-i-cast-the-result-of-malloc)
 - [malloc() inside a function](https://stackoverflow.com/questions/2838038/c-programming-malloc-inside-another-function)
 - [Pass a pointer --> i.e. pass ptr of ptr](https://stackoverflow.com/questions/7927036/how-to-pass-over-a-pointer-and-allocate-space-on-heap)
@@ -67,6 +72,7 @@
 ## Multi-dimensional Arrays
 
 - [Dynamically allocate a multi-dimensional array](http://c-faq.com/aryptr/dynmuldimary.html)
+- [Allocating array of strings](https://stackoverflow.com/questions/1088622/how-do-i-create-an-array-of-strings-in-c/1095006)
 
 ---
 
@@ -77,6 +83,7 @@
 - [GCC compiler flags](https://www.rapidtables.com/code/linux/gcc.html)
 - [Options for debugging](https://gcc.gnu.org/onlinedocs/gcc/Debugging-Options.html#Debugging-Options)
 - [Warning options](https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#Warning-Options)
+- [c99 in flags](https://stackoverflow.com/questions/2193634/setting-std-c99-flag-in-gcc)
 
 ---
 
@@ -93,6 +100,11 @@
 - [gnuplot tutorial](http://physics.ucsc.edu/~medling/programming/gnuplot_tutorial_1/index.html)
 - [bitmap to C array](https://github.com/hoiberg/bitmapToC)
 - [`time` in linux](https://stackoverflow.com/questions/51642607/why-does-the-time-bash-builtin-write-to-stderr)
+- [:= vs. = in makefiles](https://stackoverflow.com/questions/4879592/whats-the-difference-between-and-in-makefile)
+- [valgrind: Uninitialised value](https://stackoverflow.com/questions/27594992/uninitialized-value-was-created-by-a-heap-allocation)
+- [valgrind: definitely lost in record error](https://stackoverflow.com/questions/9300227/tracking-down-valgrind-40-bytes-in-1-blocks-are-definitely-lost-in-loss-record)
+- [valgrind: still reachable leak](https://stackoverflow.com/questions/3840582/still-reachable-leak-detected-by-valgrind)
+- [double free errors](https://stackoverflow.com/questions/2902064/how-to-track-down-a-double-free-or-corruption-error)
 
 ---
 ## Substantial Code Examples
