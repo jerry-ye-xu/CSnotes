@@ -2,38 +2,78 @@
 #include <stdlib.h>
 #include <string.h>
 
-int swap(int* ptr, int i, int j) {
+void print_arr(int* ptr, size_t size) {
+    for (int i = 0; i < size; i++) {
+        printf("ptr[%d]: %d\n", i, ptr[i]);
+    }
+}
+
+void swap(int* ptr, int i, int j) {
     int x = ptr[i];
     int y = ptr[j];
     ptr[i] = y;
     ptr[j] = x;
-
-}
-
-int asc(int x, int y) {
-    return x > y ? 1 : 0;
 }
 
 int desc(int x, int y) {
+    return x > y ? 1 : 0;
+}
+
+int asc(int x, int y) {
     return x < y ? 1 : 0;
 }
 
-void merge_sort_num(int* ptr, int (*compare)(int, int), size_t size) {
-    printf("*ptr: %p", (void *) ptr);
-    ptr[0] = 15;
-    for (int i = 0; i < size; i++) {
-        printf("*ptr[%d]: %d\n", i, ptr[i]);
-    }
-    if(compare(ptr[0], ptr[1])) {
-        swap(ptr, 0, 1);
-    }
-    printf("*ptr[%d]: %d\n", 0, ptr[0]);
-    printf("*ptr[%d]: %d\n", 1, ptr[1]);
-    // int** nums = arr;
-    // for (int i = 0; i < size; i++) {
-    //     printf("nums[%d]: %d", i, *nums[i]);
-    // }
+void merge_num(int* ptr, int (*compare)(int, int), size_t l_idx, size_t m_idx, size_t r_idx) {
+    int lhs_idx = m_idx - l_idx + 1;
+    int rhs_idx = r_idx - m_idx;
+    int left_arr[lhs_idx];
+    int right_arr[rhs_idx];
 
+    for (int i = 0; i < lhs_idx; i++) {
+        left_arr[i] = ptr[l_idx + i];
+    }
+    for (int i = 0; i < rhs_idx; i++) {
+        right_arr[i] = ptr[1+ m_idx + i];
+    }
+
+    int l = 0;
+    int r = 0;
+    int k = l_idx;
+    while (l < lhs_idx && r < rhs_idx) {
+        if(compare(left_arr[l], right_arr[r])) {
+            ptr[k] = left_arr[l];
+            l++;
+        } else {
+            ptr[k] = right_arr[r];
+            r++;
+        }
+        k++;
+    }
+    while (l < lhs_idx) {
+        ptr[k] = left_arr[l];
+        l++;
+        k++;
+    }
+    while (r < rhs_idx) {
+        ptr[k] = right_arr[r];
+        r++;
+        k++;
+    }
+}
+
+void merge_sort_num(int* ptr, int (*compare)(int, int), size_t l_idx, size_t r_idx) {
+    if (l_idx < r_idx) {
+        // Prevents overflow
+        int m_idx = (int) (l_idx + (r_idx - l_idx) / 2);
+        // printf("l_idx: %d\n", l_idx);
+        // printf("r_idx: %d\n", r_idx);
+        // printf("m_idx: %d\n", m_idx);
+
+        merge_sort_num(ptr, compare, l_idx, m_idx);
+        merge_sort_num(ptr, compare, m_idx+1, r_idx);
+
+        merge_num(ptr, compare, l_idx, m_idx, r_idx);
+    }
 }
 
 int main(int argc, char** argv) {
@@ -95,7 +135,14 @@ int main(int argc, char** argv) {
             }
         }
         int* ptr = arr;
-        merge_sort_num(ptr, &asc, nlines);
+        if (strcmp(order, "-a")) {
+            merge_sort_num(ptr, &asc, 0, nlines - 1);
+        } else if (strcmp(order, "-d")) {
+            merge_sort_num(ptr, &desc, 0, nlines - 1);
+        } else {
+            exit(EXIT_FAILURE);
+        }
+        print_arr(ptr, nlines);
     }
 
 }
