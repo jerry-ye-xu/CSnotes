@@ -1,0 +1,8 @@
+.DS_Store
+
+C-revision/**/.DS_Store
+C-revision/**/*.o
+C-revision/**/*.out
+C-revision/**/*.out.dSYM
+
+*.zip
