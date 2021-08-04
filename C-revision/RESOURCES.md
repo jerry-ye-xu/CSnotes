@@ -105,10 +105,13 @@
 - [valgrind: definitely lost in record error](https://stackoverflow.com/questions/9300227/tracking-down-valgrind-40-bytes-in-1-blocks-are-definitely-lost-in-loss-record)
 - [valgrind: still reachable leak](https://stackoverflow.com/questions/3840582/still-reachable-leak-detected-by-valgrind)
 - [double free errors](https://stackoverflow.com/questions/2902064/how-to-track-down-a-double-free-or-corruption-error)
+- [Commands for hardware info](https://www.binarytides.com/linux-commands-hardware-info/)
 
 ---
 ## Substantial Code Examples
 
+- [Berkeley CS162 Course](https://inst.eecs.berkeley.edu/~cs162/archives.html)
+- [UNSW OS Course](https://cgi.cse.unsw.edu.au/~cs3231/lectures.php)
 - [COMP2017 Notes](https://github.com/jerry-ye-xu/CSnotes/tree/comp2017/COMP2017)
 - [vstack 2018](https://github.com/chrishyland/COMP2017-AssignmentOne/blob/master/vstack.c)
 - [BFS in C](https://www.programiz.com/dsa/graph-bfs)
