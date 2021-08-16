@@ -42,7 +42,7 @@ void* dll_get(struct DoubleLinkedList* dll, void* key, int (*eq)(void*, void*)) 
             return curr_node;
         }
         curr_node = curr_node->next;
-    }
+
     return NULL;
 }
 
