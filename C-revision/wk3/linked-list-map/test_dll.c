@@ -32,10 +32,12 @@ int test_empty_list() {
     return res;
 }
 
+// @TODO[jerryx]: Test for "node->prev" as well!
 int test_add_one() {
     int res;
     int x = 1; int y = 11;
     int* k = &x; int* v = &y;
+    int (*eq)(void*, void*) = eq_int;
 
     struct DoubleLinkedList* dll = malloc(sizeof(struct DoubleLinkedList));
     dll->size = 0;
@@ -44,6 +46,9 @@ int test_add_one() {
     res = dll->size ? 1 : 0;
     res = *(int*) dll->head->key == 1 ? 1 : 0;
     res = min_(*(int*) dll->head->value == 11 ? 1 : 0, res);
+    printf("dll_get(dll, k, eq): %p\n", dll_get(dll, k, eq));
+    printf("dll_get(dll, k, eq)->key: %d\n", *(int*)((struct Node*)dll_get(dll, k, eq))->key);
+    // res = min_((int*) (dll_get(dll, k, eq))->key ? 1 : 0, res);
 
     return res;
 }

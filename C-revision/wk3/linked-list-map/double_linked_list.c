@@ -37,13 +37,30 @@ void dll_add(struct DoubleLinkedList* dll, void* key, void* value) {
 void* dll_get(struct DoubleLinkedList* dll, void* key, int (*eq)(void*, void*)) {
     struct Node* curr_node = dll->head;
     for (int i = 0; i < dll->size; i++) {
+        // printf("eq(curr_node->key, key): %d\n", eq(curr_node->key, key));
         if (eq(curr_node->key, key)) {
             return curr_node;
         }
+        curr_node = curr_node->next;
     }
     return NULL;
 }
 
 void* dll_rm(struct DoubleLinkedList* dll, void* key, int (*eq)(void*, void*)) {
+    struct Node* curr_node = dll->head;
+    for (int i = 0; i < dll->size; i++) {
+        // printf("eq(curr_node->key, key): %d\n", eq(curr_node->key, key));
+        if (eq(curr_node->key, key)) {
+            left = curr_node->prev;
+            right = curr_node->next;
+            left->next = right;
+            right->prev = left;
+            curr_node->prev = NULL;
+            curr_node->next = NULL;
+            dll->size--;
+            return curr_node;
+        }
+        curr_node = curr_node->next;
+    }
     return NULL;
 }
